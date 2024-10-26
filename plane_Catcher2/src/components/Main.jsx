@@ -92,11 +92,11 @@ const Main = () => {
                     {error && <p className="error">{error}</p>}
                     {flightData && (
                         <div>
-                            <h3>Détails du Vol</h3>
-                            <p>Compagnie : {flightData.airline.name}</p>
+                            <h3>Flight Details</h3>
+                            <p>Airline : {flightData.airline.name}</p>
                             <p>Statut : {flightData.flight_status}</p>
                             <p>Date : {flightData.departure.estimated} (Estimé)</p>
-                            <p>Modèle d'Avion : {flightData.aircraft.icao}</p>
+                            <p>Aircraft Model : {flightData.aircraft.icao}</p>
                             {/* Ajoute d'autres informations que tu souhaites afficher */}
                         </div>
                     )}
