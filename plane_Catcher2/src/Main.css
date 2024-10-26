@@ -1,40 +1,150 @@
-.container_flex2{
+body {
+    margin: 0;
+}
+
+.container_flex2 {
     display: flex;
     flex-direction: column;
+    margin-top: 60px;
+    margin-left: 20px; /* Cette ligne doit être ici pour fonctionner. */
 }
-.article_flex{
+
+.article_flex {
     display: flex;
     flex-direction: row;
 }
-.h1_article_flex{
+
+.h1_article_flex {
     color: #00A0B1;
     font-family: 'Roboto', sans-serif;
-    font-weight: 700;;
+    font-weight: 700;
 }
-.h2_article_flex{
+
+.h2_article_flex {
     color: #000000;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    font-size: 80px;
-
+    font-size: 85px;
+    margin-bottom: 50.7px;
+    margin-top: 30px;
 }
-.p_article_flex{
-   color: #A1A1A1;
-   font-family: 'Poppins', sans-serif;
-   font-weight: 700;
 
+.p_article_flex {
+    color: #A1A1A1;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
 }
-main{
+
+main {
     margin-top: 20px;
 }
-.button1{
+
+.button1 {
     background-color: #00A0B1;
     color: #FFFFFF;
     width: auto;
     border-style: solid;
     border-radius: 10px;
-    width: 120px;
-    font-family:'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 700;
     padding: 5px;
+    font-size: 18px;
+    width: 150px; /* Si cela cause un problème, essaie de supprimer cette ligne */
+}
+
+.Form_iata {
+    background-color: #99EBF4;
+    margin-top: 200px;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 200px;
+}
+
+
+.h1_form {
+    font-size: 70px;
+    padding-top: 50px;
+    margin-left: 450px;
+}
+
+.flight_idnumber {
+    height: 20px;
+    width: 100%;
+    max-width: 350px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.form_group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 300px;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+input[type="text"]:focus {
+    border-color: #007bff;
+}
+
+/* Positionnement et animation du label */
+label {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    color: #999;
+    font-size: 16px;
+    transition: 0.3s ease;
+    pointer-events: none;
+}
+
+input[type="text"]:focus + label,
+input[type="text"]:not(:placeholder-shown) + label {
+    top: -20px;
+    left: 10px;
+    font-size: 12px;
+    color: #FFFFFF;
+}
+input[type="date"] {
+    max-width: 320px; /* Largeur maximale */
+    height: 31px;       /* Hauteur spécifique */
+    padding: 5px;         /* Ajustez si nécessaire pour l'espacement intérieur */
+    font-size: 16px;      /* Taille de la police */
+    border: 1px solid #ccc; /* Bordure */
+    border-radius: 5px;   /* Coins arrondis */
+    outline: none;        /* Supprime l'effet de contour par défaut */
+    width: 100%;          /* Permet au champ de remplir l'espace disponible */
+}
+
+/* Optionnel : Ajoutez un style pour le focus */
+input[type="date"]:focus {
+    border-color: #007bff; /* Change la couleur de la bordure au focus */
+}
+
+.button_submit{ 
+  font-size: 18px;
+  padding: 3px;
+  margin-left: 717px;
+
+}
+.form_track{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+}
+.test_1{
+    display: flex;
+    flex-direction: column;
+}
+.container_flex2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
