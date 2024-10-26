@@ -83,9 +83,9 @@ const Main = () => {
                                 required
                               />
                         
-                        
+                        <button className='button_submit' type="submit">Suivre le vol</button>
                     </form>
-                    <button className='button_submit' type="submit">Suivre le vol</button>
+                    
                 
 
                     {/* Affichage des résultats ou des erreurs */}
@@ -96,6 +96,7 @@ const Main = () => {
                             <p>Compagnie : {flightData.airline.name}</p>
                             <p>Statut : {flightData.flight_status}</p>
                             <p>Date : {flightData.departure.estimated} (Estimé)</p>
+                            <p>Modèle d'Avion : {flightData.aircraft.icao}</p>
                             {/* Ajoute d'autres informations que tu souhaites afficher */}
                         </div>
                     )}
