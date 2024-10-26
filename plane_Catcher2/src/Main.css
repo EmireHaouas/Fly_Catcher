@@ -1,0 +1,40 @@
+.container_flex2{
+    display: flex;
+    flex-direction: column;
+}
+.article_flex{
+    display: flex;
+    flex-direction: row;
+}
+.h1_article_flex{
+    color: #00A0B1;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;;
+}
+.h2_article_flex{
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 80px;
+
+}
+.p_article_flex{
+   color: #A1A1A1;
+   font-family: 'Poppins', sans-serif;
+   font-weight: 700;
+
+}
+main{
+    margin-top: 20px;
+}
+.button1{
+    background-color: #00A0B1;
+    color: #FFFFFF;
+    width: auto;
+    border-style: solid;
+    border-radius: 10px;
+    width: 120px;
+    font-family:'Poppins', sans-serif;
+    font-weight: 700;
+    padding: 5px;
+}
