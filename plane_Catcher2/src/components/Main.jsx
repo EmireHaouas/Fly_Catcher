@@ -84,7 +84,7 @@ const Main = () => {
                                   required
                                 />
                         
-                            <button className='button_submit' type="submit">Suivre le vol</button>
+                            <button className='button_submit' type="submit">Track your Flight</button>
                     </form>
                     
                 

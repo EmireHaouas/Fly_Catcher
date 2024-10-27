@@ -53,10 +53,10 @@ main {
 }
 
 .Form_iata {
-    background-color: #99EBF4;
+    background-color: rgba(153, 235, 244, 0.3);
     margin-top: 200px;
     font-family: 'Roboto', sans-serif;
-    padding-bottom: 200px;
+    padding-bottom: 400px;
 }
 
 
@@ -110,7 +110,7 @@ input[type="text"]:not(:placeholder-shown) + label {
     top: -20px;
     left: 10px;
     font-size: 12px;
-    color: #FFFFFF;
+    color: black;
 }
 input[type="date"] {
     max-width: 320px; /* Largeur maximale */
