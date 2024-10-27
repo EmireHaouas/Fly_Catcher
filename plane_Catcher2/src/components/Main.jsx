@@ -40,7 +40,7 @@ const Main = () => {
         <main>
             <article className='article_flex'>
                   <img src={image_header} alt='Des'/>
-                  <div className='container_flex2'>
+                <div className='container_flex2'>
                      <h1 className='h1_article_flex'>EXPLORE THE WORLD</h1>
                      <h2 className='h2_article_flex'>It's Time<br/> To Travel Around<br/> The World</h2>
                      <p className='p_article_flex'>
@@ -52,11 +52,11 @@ const Main = () => {
                 </div>
             </article>
 
-                <section className='Form_iata'>
+            <section className='Form_iata'>
 
-                    <h1 className='h1_form'>Track Your Flight</h1>
+                     <h1 className='h1_form'>Track Your Flight</h1>
                     
-                    {/* Formulaire pour le suivi des vols */}
+                     {/* Formulaire pour le suivi des vols */}
                    
                     <form className='form_track' onSubmit={handleSubmit}>
                     
@@ -75,15 +75,15 @@ const Main = () => {
                         </div>
                         
                             <label htmlFor="date">Date (YYYY-MM-DD) :</label>
-                              <input
-                                type="date"
-                                id="date"
-                                value={date}
-                                onChange={(e) => setDate(e.target.value)}
-                                required
-                              />
+                                <input
+                                  type="date"
+                                  id="date"
+                                  value={date}
+                                  onChange={(e) => setDate(e.target.value)}
+                                  required
+                                />
                         
-                        <button className='button_submit' type="submit">Suivre le vol</button>
+                            <button className='button_submit' type="submit">Suivre le vol</button>
                     </form>
                     
                 
@@ -100,7 +100,7 @@ const Main = () => {
                             {/* Ajoute d'autres informations que tu souhaites afficher */}
                         </div>
                     )}
-                </section>
+            </section>
             
         </main>
     );
