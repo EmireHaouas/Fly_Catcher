@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import '../Main.css';
 import image_header from '../assets/imgs/img_header.png';
+import plane_icon from '../assets/imgs/plane_icon.png';
 
 const Main = () => {
     const [flightId, setFlightId] = useState('');
@@ -74,7 +75,7 @@ const Main = () => {
                             <label htmlFor="flightId">Flight Number</label>
                         </div>
                         
-                            <label htmlFor="date">Date (YYYY-MM-DD) :</label>
+                            
                                 <input
                                   type="date"
                                   id="date"
@@ -93,11 +94,14 @@ const Main = () => {
                     {flightData && (
                         <div>
                             <h3>Flight Details</h3>
+                            <p className='p_destination'>From : {flightData.departure.airport} <img className='plane_icon' src={plane_icon} alt=''></img> {flightData.arrival.airport}</p>
                             <p>Airline : {flightData.airline.name}</p>
                             <p>Statut : {flightData.flight_status}</p>
                             <p>Date : {flightData.departure.estimated} (Estimé)</p>
                             <p>Aircraft Model : {flightData.aircraft.icao}</p>
-                            {/* Ajoute d'autres informations que tu souhaites afficher */}
+                            <p>Arrival Terminal : {flightData.arrival.terminal}</p>
+                            <p>Arrival Gate : {flightData.arrival.gate}</p>
+                           
                         </div>
                     )}
             </section>

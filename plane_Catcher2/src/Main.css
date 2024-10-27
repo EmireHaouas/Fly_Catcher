@@ -148,3 +148,11 @@ input[type="date"]:focus {
     flex-direction: column;
     align-items: center;
 }
+.p_destination{ 
+display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.plane_icon{
+    margin-right: 60px;
+}
