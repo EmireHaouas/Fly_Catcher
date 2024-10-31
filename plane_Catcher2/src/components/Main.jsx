@@ -45,7 +45,7 @@ const Main = () => {
                      <h1 className='h1_article_flex'>EXPLORE THE WORLD</h1>
                      <h2 className='h2_article_flex'>It's Time<br/> To Travel Around<br/> The World</h2>
                      <p className='p_article_flex'>
-                        Check Off the Ultimate Global Travel Checklist With your<br/>
+                        Check Off the Ultimate Global Travel Checkliist With your<br/>
                         Travel Partner! Make your vacation a fun, exciting, and<br/>
                         unforgettable experience.
                      </p>
