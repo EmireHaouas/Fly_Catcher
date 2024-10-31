@@ -56,13 +56,13 @@ const Main = () => {
             <section className='Form_iata'>
 
                      <h1 className='h1_form'>Track Your Flight</h1>
-                    
+
                      {/* Formulaire pour le suivi des vols */}
-                   
+
                     <form className='form_track' onSubmit={handleSubmit}>
-                    
+
                         <div className='form_group'>
-                    
+
                           <input
                               className='flight_idnumber'
                               type="text"
@@ -74,8 +74,8 @@ const Main = () => {
                           />
                             <label htmlFor="flightId">Flight Number</label>
                         </div>
-                        
-                            
+
+
                                 <input
                                   type="date"
                                   id="date"
@@ -83,29 +83,31 @@ const Main = () => {
                                   onChange={(e) => setDate(e.target.value)}
                                   required
                                 />
-                        
-                            <button className='button_submit' type="submit">Track your Flight</button>
+
+                            <button className='button_submit' type="submit">Suivre le vol</button>
                     </form>
-                    
-                
+
+
 
                     {/* Affichage des résultats ou des erreurs */}
                     {error && <p className="error">{error}</p>}
                     {flightData && (
                         <div>
                             <h3>Flight Details</h3>
-                            <p className='p_destination'>From : {flightData.departure.airport} <img className='plane_icon' src={plane_icon} alt=''></img> {flightData.arrival.airport}</p>
+                            <p className='p_destination'>From : {flightData.departure.airport} <img
+                                className='plane_icon' src={plane_icon} alt=''></img> {flightData.arrival.airport}</p>
                             <p>Airline : {flightData.airline.name}</p>
                             <p>Statut : {flightData.flight_status}</p>
                             <p>Date : {flightData.departure.estimated} (Estimé)</p>
                             <p>Aircraft Model : {flightData.aircraft.icao}</p>
                             <p>Arrival Terminal : {flightData.arrival.terminal}</p>
                             <p>Arrival Gate : {flightData.arrival.gate}</p>
-                           
+                            <p>Aircraft Age : {departure.delay}</p>
+
                         </div>
                     )}
             </section>
-            
+
         </main>
     );
 };
