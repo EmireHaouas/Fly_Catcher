@@ -92,17 +92,21 @@ const Main = () => {
                     {/* Affichage des résultats ou des erreurs */}
                     {error && <p className="error">{error}</p>}
                     {flightData && (
-                        <div>
-                            <h3>Flight Details</h3>
-                            <p className='p_destination'>From : {flightData.departure.airport} <img
-                                className='plane_icon' src={plane_icon} alt=''></img> {flightData.arrival.airport}</p>
-                            <p>Airline : {flightData.airline.name}</p>
-                            <p>Statut : {flightData.flight_status}</p>
-                            <p>Date : {flightData.departure.estimated} (Estimé)</p>
-                            <p>Aircraft Model : {flightData.aircraft.icao}</p>
-                            <p>Arrival Terminal : {flightData.arrival.terminal}</p>
-                            <p>Arrival Gate : {flightData.arrival.gate}</p>
-                            <p>Aircraft Age : {departure.delay}</p>
+                        <div className='cards'>
+                            <div className='card_details'>
+                              <h3>Flight Details</h3>
+                              <p className='airline'>Airline : {flightData.airline.name}</p>
+                              <p className='p_destination'>From : {flightData.departure.airport} <img
+                                 className='plane_icon' src={plane_icon} alt=''></img> {flightData.arrival.airport}</p>
+                            </div>
+
+                            <div className='card_flight_status'>
+                              <p>Statut : {flightData.flight_status}</p>
+                              <p>Date : {flightData.departure.estimated} (Estimé)</p>
+                              <p>Aircraft Model : {flightData.aircraft.icao}</p>
+                              <p>Arrival Terminal : {flightData.arrival.terminal}</p>
+                              <p>Arrival Gate : {flightData.arrival.gate}</p>
+                            </div>
 
                         </div>
                     )}

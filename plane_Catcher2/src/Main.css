@@ -156,3 +156,14 @@ display: flex;
 .plane_icon{
     margin-right: 60px;
 }
+.card_details{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    font-size: 23px;
+}
