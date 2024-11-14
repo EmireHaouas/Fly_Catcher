@@ -71,7 +71,7 @@ const Main = () => {
             <article className='article_flex'>
                 <img src={image_header} alt='Des' />
                 <div className='container_flex2'>
-                    <img className='' alt='' src={active_Flight} />
+                    <img className='active_Flight' alt='' src={active_Flight} />
                     <h1 className='h1_article_flex'>EXPLORE THE WORLD</h1>
                     <h2 className='h2_article_flex'>It's Time<br/> To Travel Around<br/> The World</h2>
                     <p className='p_article_flex'>
@@ -149,6 +149,8 @@ const Main = () => {
                                     <hr className='hr'  />
                                     </div>
                                 </p>
+
+                                {/*deuxième section*/}
                                 
                             <p className='p_arrival'>{flightData.arrival.airport}</p>
                             <p className='s'>{formatLocalTime(flightData.arrival.estimated)}</p>

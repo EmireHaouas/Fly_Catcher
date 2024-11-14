@@ -198,3 +198,6 @@ display: flex;
     flex-direction: row;
     align-items: center;
 }
+.active_Flight{
+    width: 100px;
+}
