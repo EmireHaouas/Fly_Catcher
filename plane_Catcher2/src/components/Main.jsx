@@ -6,6 +6,7 @@ import Arrow_img from '../assets/imgs/arrow.png';
 import active_Flight from '../assets/imgs/active_icon.gif';
 import flight_info from '../assets/imgs/flight_info.png';
 import clock_icon from '../assets/imgs/clock_icon.png';
+import plane_moving from '../assets/imgs/plane_moving.gif';
 
 const Main = () => {
     const [flightId, setFlightId] = useState('');
@@ -109,7 +110,7 @@ const Main = () => {
                         required
                     />
 
-                    <button className='button_submit' type="submit">Suivre le vol</button>
+                    <button className='button_submit' type="submit">Track</button>
                 </form>
 
                 {/* Affichage des résultats ou des erreurs */}
@@ -117,7 +118,8 @@ const Main = () => {
                 {flightData && (
                     <div className='cards'>
                         <div className='card_details'>
-                            <h3>Flight Details</h3>
+                               <h3>Flight Details</h3>
+                            <div className="entire_section">
                               <div className='dede'>
                                 <div className='dep'>
                             
@@ -150,29 +152,35 @@ const Main = () => {
                                     </div>
                                 </p>
 
-                                {/*deuxième section*/}
-                                
+                               {/*deuxième section*/}
+                    <div className="section_2">
+                        <div className="cd">
                             <p className='p_arrival'>{flightData.arrival.airport}</p>
                             <p className='s'>{formatLocalTime(flightData.arrival.estimated)}</p>
+                        </div>
+                        <div className="cd2">
                             <p>
-                                Arrival Gate: 
+                                 
                                 <span className='gates_design'>
                                     <img className='Arrow_img' alt='arrow' src={Arrow_img} /> 
                                     {flightData.arrival.gate}
                                 </span>
                             </p>
                             <p>
-                                Arrival Terminal: 
+                                 
                                 <span className='terminals_design'>
                                     <img className='Arrow_img' alt='arrow' src={Arrow_img} /> 
                                     {flightData.arrival.terminal}
                                 </span>
                             </p>
-
+                        </div>
+                    </div>
+                </div>
                             <div className='card_flight_status'>
+                                {/*
                                 <p className='airline'>Airline: {flightData.airline.name}</p>
                                 <p>Status: {flightData.flight_status}</p>
-                                <p>Aircraft Model: {flightData.aircraft.icao}</p>
+                                <p>Aircraft Model: {flightData.aircraft.icao}</p> */}
                             </div>
                         </div>
                     </div>

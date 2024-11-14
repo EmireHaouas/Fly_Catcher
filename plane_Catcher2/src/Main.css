@@ -192,6 +192,7 @@ display: flex;
 .tgates{
     display: flex;
     flex-direction: column;
+    margin-left: 241px;
 }
 .clock{
     display: flex;
@@ -200,4 +201,28 @@ display: flex;
 }
 .active_Flight{
     width: 100px;
+}
+.hr{
+    width: 430px;
+    margin-left: 5px;
+}
+.cd{
+    display: flex;
+    flex-direction: column;
+}
+.cd2{
+    display: flex;
+    flex-direction: column;
+    margin-left: 241px; 
+}
+.section_2{
+    display: flex;
+    flex-direction: row;
+}
+.entire_section{
+    display: flex;
+    flex-direction: column;
+}
+.plane_moving{
+    width: 200px;
 }
