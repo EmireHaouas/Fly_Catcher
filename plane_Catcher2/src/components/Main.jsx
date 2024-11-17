@@ -7,6 +7,7 @@ import active_Flight from '../assets/imgs/active_icon.gif';
 import flight_info from '../assets/imgs/flight_info.png';
 import clock_icon from '../assets/imgs/clock_icon.png';
 import plane_moving from '../assets/imgs/plane_moving.gif';
+import Bottom_arrow_icon from '../assets/imgs/Bottom_arrow_icon.png'
 
 const Main = () => {
     const [flightId, setFlightId] = useState('');
@@ -85,7 +86,7 @@ const Main = () => {
             </article>
 
             <section className='Form_iata'>
-                <h1 className='h1_form'>Track Your Flight</h1> 
+                <h1 className='h1_form'>Track Your Flight Now</h1> 
 
                 {/* Formulaire pour le suivi des vols */}
                 <form className='form_track' onSubmit={handleSubmit}>
@@ -118,7 +119,7 @@ const Main = () => {
                 {flightData && (
                     <div className='cards'>
                         <div className='card_details'>
-                               <h3>Flight Details</h3>
+                               <h3 className='h3_cards'>Flight Details</h3>
                             <div className="entire_section">
                               <div className='dede'>
                                 <div className='dep'>
@@ -176,6 +177,7 @@ const Main = () => {
                         </div>
                     </div>
                 </div>
+                <p>I am an aviation geek.</p> <img className='arrow_bottom' alt='' src={Bottom_arrow_icon}/>
                             <div className='card_flight_status'>
                                 {/*
                                 <p className='airline'>Airline: {flightData.airline.name}</p>

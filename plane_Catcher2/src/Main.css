@@ -222,7 +222,21 @@ display: flex;
 .entire_section{
     display: flex;
     flex-direction: column;
+    font-family: "montserrat", sans-serif;
+    padding: 30px;
+    border-radius: 50px;
+    background-color: #F5F5F5;
+    border: solid;
+    letter-spacing: 2px;
 }
 .plane_moving{
     width: 200px;
+}
+.h3_cards{
+    font-size: 45px;
+    letter-spacing: 2px;
+}
+.arrow_bottom{
+    width: 40px;
+    letter-spacing: 2px;
 }
