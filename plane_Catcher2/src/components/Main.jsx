@@ -8,7 +8,11 @@ import active_Flight from '../assets/imgs/active_icon.gif';
 import flight_info from '../assets/imgs/flight_info.png';
 import clock_icon from '../assets/imgs/clock_icon.png';
 import plane_moving from '../assets/imgs/plane_moving.gif';
-import Bottom_arrow_icon from '../assets/imgs/Bottom_arrow_icon.png'
+import Bottom_arrow_icon from '../assets/imgs/Bottom_arrow_icon.png';
+import takeoff_plane from '../assets/imgs/takeoff_plane.gif';
+import landing_plane from '../assets/imgs/landing_plane.gif';
+import tower from '../assets/imgs/tower.gif';
+import flying_plane from '../assets/imgs/flying_plane.gif';
 
 const Main = () => {
     const [flightId, setFlightId] = useState('');
@@ -85,6 +89,12 @@ const Main = () => {
             <section className='Form_iata'>
                 <h1 className='h1_form'>Track Your Flight Now</h1>
 
+                {/*/test image landing et t/o */}
+                <div className="tolanding_icons">
+                <img alt='' className='landing_plane' src={landing_plane}/>
+                <img alt='' className='tower_icon' src={tower}/>
+                <img alt='' className='takeoff_plane' src={takeoff_plane}/>
+               </div>
                 <form className='form_track' onSubmit={handleSubmit}>
                     <div className='form_group'>
                         <input
@@ -100,6 +110,7 @@ const Main = () => {
                     </div>
 
                     <input
+                        className='date_Flight'
                         type="date"
                         id="date"
                         value={date}
@@ -114,7 +125,10 @@ const Main = () => {
                 {flightData && (
                     <div className='card_Flightinfos'>
                         <div className='card_details'>
-                            <h3 className='h3_cards'>Flight Details</h3>
+                            <div className="h3_moving">
+                            <h3 className='h3_cards'>Flight Details</h3> 
+                            <img className='flying_plane' src={flying_plane} alt=''/>
+                            </div>
                           <div className="entiresection_wrap">
                             <div className="entire_section">
                                 <div className="first_Row">
@@ -139,7 +153,7 @@ const Main = () => {
 
                                 <div className="third_Row">
                                     <img className='clock_icon' alt='clock icon' src={clock_icon} />
-                                    {calculateFlightDuration(flightData.departure.estimated, flightData.arrival.estimated)} <hr />
+                                    <span>{calculateFlightDuration(flightData.departure.estimated, flightData.arrival.estimated)}</span> <hr />
                                 </div>
 
                                 <div className="fourth_Row">
@@ -168,11 +182,11 @@ const Main = () => {
                             <ToggleButton onClick={toggleGeekInfosVisibility} />
                             {isGeekInfosVisible && (
                                 <div className='geek_infos'>
-                                    <p className='airline'>Airline: {flightData.airline.name}</p>
-                                    <p>Status: {flightData.flight_status}</p>
-                                    <p>Aircraft Model: {flightData.aircraft.icao}</p>
-                                    <p>Aircraft Model: {flightData.departure.delay}</p>
-                                    <p>Tail Number: <span>{flightData.aircraft.registration}</span></p>
+                                    <p className='airline'><span>Airline:</span> {flightData.airline.name}</p>
+                                    <p><span>Status:</span> {flightData.flight_status}</p>
+                                    <p><span>Aircraft Model:</span> {flightData.aircraft.icao}</p>
+                                    <p><span>Departure Delay:</span> {flightData.departure.delay}</p>
+                                    <p><span>Tail Number:</span> <span>{flightData.aircraft.registration}</span></p>
                                 </div>
                             )}
                         </div>
