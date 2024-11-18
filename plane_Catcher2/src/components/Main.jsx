@@ -117,67 +117,61 @@ const Main = () => {
                 {/* Affichage des résultats ou des erreurs */}
                 {error && <p className="error">{error}</p>}
                 {flightData && (
-                    <div className='cards'>
+                    <div className='card_Flightinfos'>
                         <div className='card_details'>
-                               <h3 className='h3_cards'>Flight Details</h3>
-                            <div className="entire_section">
-                              <div className='dede'>
-                                <div className='dep'>
-                            
-                                <p className='p_destination'>{flightData.departure.airport}</p>
-                                <p className='s'>{formatLocalTime(flightData.departure.estimated)}</p>
-                               </div>
-                            
-                                <div className='tgates'>
-                                <p>
-                                    <span className='gates_design'>
-                                        <img className='Arrow_img' alt='arrow' src={Arrow_img} /> 
-                                        {flightData.departure.gate}
-                                    </span>
-                                </p>
-                                <p>
-                                    <span className='terminals_design'>
-                                        <img className='Arrow_img' alt='arrow' src={Arrow_img} /> 
-                                        {flightData.departure.terminal}
-                                    </span>
-                                </p>
-                                </div>
-                                </div>
-                                
-                               
-                                <p>
-                                <div className='clock'>
-                                    <img className='clock_icon' alt='clock icon' src={clock_icon} /> 
-                                    {calculateFlightDuration(flightData.departure.estimated, flightData.arrival.estimated)}
-                                    <hr className='hr'  />
-                                    </div>
-                                </p>
 
-                               {/*deuxième section*/}
-                    <div className="section_2">
-                        <div className="cd">
-                            <p className='p_arrival'>{flightData.arrival.airport}</p>
-                            <p className='s'>{formatLocalTime(flightData.arrival.estimated)}</p>
-                        </div>
-                        <div className="cd2">
-                            <p>
-                                 
-                                <span className='gates_design'>
-                                    <img className='Arrow_img' alt='arrow' src={Arrow_img} /> 
-                                    {flightData.arrival.gate}
-                                </span>
-                            </p>
-                            <p>
-                                 
-                                <span className='terminals_design'>
-                                    <img className='Arrow_img' alt='arrow' src={Arrow_img} /> 
-                                    {flightData.arrival.terminal}
-                                </span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <p>I am an aviation geek.</p> <img className='arrow_bottom' alt='' src={Bottom_arrow_icon}/>
+                            {/*debut des détails de vols */}
+                               <h3 className='h3_cards'>Flight Details</h3>
+
+                            {/*commencement de la carte de section*/}
+                            <div className="entire_section">
+    <div className="first_Row">
+       <p className='airport_Dep'>{flightData.departure.airport}</p>
+        <p>
+          <span className='gates_design'>
+              <img className='Arrow_img' alt='arrow' src={Arrow_img} /> 
+                 {flightData.departure.gate}
+          </span>
+       </p>
+    </div>
+    
+    <div className="second_Row">
+       <p className='departure_Time'>{formatLocalTime(flightData.departure.estimated)}</p>
+       <p>
+           <span className='terminals_design'>
+               <img className='Arrow_img' alt='arrow' src={Arrow_img} /> 
+                  {flightData.departure.terminal}
+           </span>
+       </p>
+
+    </div>
+
+    <div className="third_Row">
+       <img className='clock_icon' alt='clock icon' src={clock_icon} /> 
+          {calculateFlightDuration(flightData.departure.estimated, flightData.arrival.estimated)} <hr></hr>
+    </div>
+
+    <div className="fourth_Row">
+       <p className='airport_arrival'>{flightData.arrival.airport}</p>
+       <p>
+           <span className='gates_design'>
+               <img className='Arrow_img' alt='arrow' src={Arrow_img} /> 
+                  {flightData.arrival.gate}
+           </span>
+       </p>
+   </div>
+
+   <div className="sixth_Row">
+     <p className='arrival_Time'>{formatLocalTime(flightData.arrival.estimated)}</p>
+       <p>
+           <span className='terminals_design'>
+              <img className='Arrow_img' alt='arrow' src={Arrow_img} /> 
+                {flightData.arrival.terminal}
+           </span>
+       </p>   
+   </div>
+</div>
+ <p>I am an aviation geek.</p> <img className='arrow_bottom' alt='' src={Bottom_arrow_icon}/>
                             <div className='card_flight_status'>
                                 {/*
                                 <p className='airline'>Airline: {flightData.airline.name}</p>

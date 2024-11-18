@@ -148,7 +148,7 @@ input[type="date"]:focus {
     flex-direction: column;
     align-items: center;
 }
-.p_destination{ 
+.airport_Dep{ 
 display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -162,7 +162,7 @@ display: flex;
     flex-direction: column;
     margin-top: 50px;
 }
-.cards{
+.card_Flightinfos{
     display: flex;
     flex-direction: column;
     font-size: 23px;
@@ -222,6 +222,7 @@ display: flex;
 .entire_section{
     display: flex;
     flex-direction: column;
+    gap: 10px;
     font-family: "montserrat", sans-serif;
     padding: 30px;
     border-radius: 50px;
@@ -240,3 +241,25 @@ display: flex;
     width: 40px;
     letter-spacing: 2px;
 }
+
+.first_Row, .second_Row, .third_Row, .fourth_Row, .fifth_Row, .sixth_Row{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+
+}
+
+hr{
+    margin: 5px 0 0; /* Ajoute un espace de 5px au-dessus de la <hr> */
+    border: 1px solid black; /* Style personnalisé de la <hr> */
+    width: calc(100% + 5px); /* Rend la <hr> aussi large que nécessaire, avec un ajustement */
+    border-radius: 5px;
+}
+.terminals_design, .gates_design{
+    margin-left: 200px;
+}
+
+  
+
+
