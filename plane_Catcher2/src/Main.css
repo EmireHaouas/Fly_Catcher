@@ -174,12 +174,13 @@ display: flex;
     border-radius: 8px;
     font-weight: bold;
     border-color: yellow;
+    border: solid;
 
 }
 .Arrow_img{
-    width: 20px;
-    height: 20px;
-    margin-right: 5px;
+    width: 15px;
+    height: 15px;
+    margin-right: 7px;
 }
 .clock_icon{
     width: 30px;

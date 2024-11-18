@@ -115,6 +115,7 @@ const Main = () => {
                     <div className='card_Flightinfos'>
                         <div className='card_details'>
                             <h3 className='h3_cards'>Flight Details</h3>
+                          <div className="entiresection_wrap">
                             <div className="entire_section">
                                 <div className="first_Row">
                                     <p className='airport_Dep'>{flightData.departure.airport}</p>
@@ -160,6 +161,7 @@ const Main = () => {
                                         </span>
                                     </p>
                                 </div>
+                            </div>
                             </div>
 
                             <p>I am an aviation geek.</p>
