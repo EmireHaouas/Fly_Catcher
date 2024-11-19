@@ -13,6 +13,8 @@ import takeoff_plane from '../assets/imgs/takeoff_plane.gif';
 import landing_plane from '../assets/imgs/landing_plane.gif';
 import tower from '../assets/imgs/tower.gif';
 import flying_plane from '../assets/imgs/flying_plane.gif';
+import step_img from '../assets/imgs/step_img.jpg';
+import travel_icon from '../assets/imgs/travel_icon.png';
 
 const Main = () => {
     const [flightId, setFlightId] = useState('');
@@ -192,6 +194,53 @@ const Main = () => {
                         </div>
                     </div>
                 )}
+            </section>
+            <section className='track_Steps'>
+                <div className=''>
+                    <h2 className='h2_Steps'>Book Your next trip<br></br>
+                                             in 3 easy steps
+                    </h2>
+
+                </div>
+                <div className='text_Img'>
+                  <div className='text_Steps'>
+                    
+                        <div className='step1'>
+                            <img className='travel_Icon' alt='' src={travel_icon}/>
+                              < div className='sub_Step1'>
+                            <h4 className='h4_Step1'>Choose Destination</h4>
+                            <p className='p_Step1'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br></br>
+                               Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</p>
+                            </div>
+                    </div>
+                    
+                    <div className='step2'>
+                            <img className='travel_Icon' alt='' src={travel_icon}/>
+                            <div className='sub_Step2'>
+                            <h4 className='h4_Step2'>Choose Destination</h4>
+                            <p className='p_Step2'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br></br>
+                               Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</p>
+                            </div>
+                       
+                    </div>
+                   
+                    <div className='step3'>
+                            <img className='travel_Icon' alt='' src={travel_icon}/>
+                            <div className='sub_Step3'>
+                            <h4 className='h4_Step3'>Choose Destination</h4>
+                            <p className='p_Step3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br></br>
+                               Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</p>
+                           </div>
+                    </div>
+                  </div>
+                    <img className='step_Img' alt='' src={step_img}/>
+                    
+                </div>
+            </section>
+            <section>
+                <div className=''>
+
+                </div>
             </section>
         </main>
     );

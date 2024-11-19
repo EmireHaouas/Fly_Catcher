@@ -326,6 +326,61 @@ hr{
     flex-direction: row ;
     align-items: first baseline;
     margin-left: 80px;
-
 }
-
+.h2_Steps{
+    font-size: 48px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+}
+.track_Steps{
+    background-color: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.step_Img{
+    width: 500px;
+    height: auto;
+    margin-left: 300px;
+    border-radius: 20px;
+}
+.teest1, .teest2, .teest3{
+    display: flex;
+    flex-direction: column;
+}
+.text_Steps{
+    display: flex;
+    flex-direction: column;
+}
+.text_Img{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 180px;
+}
+.step1, .step2, .step3{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.sub_Step1, .sub_Step2, .sub_Step3{
+    display: flex;
+    flex-direction: column;
+}
+.travel_Icon{
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+.h4_Step1, .h4_Step2, .h4_Step3{
+    color: #00A0B1;
+    font-size: 24px;
+    margin-bottom: 0;
+}
+.p_Step1, .p_Step2, .p_Step3{
+    color: #A1A1A1;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 0;
+}
