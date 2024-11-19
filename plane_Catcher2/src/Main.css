@@ -57,6 +57,8 @@ main {
     margin-top: 200px;
     font-family: 'Roboto', sans-serif;
     padding-bottom: 400px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
 }
 
 
@@ -134,9 +136,13 @@ input[type="date"]:focus {
 
 .button_submit{ 
   font-size: 18px;
-  padding: 3px;
+  padding: 5px;
   margin-left: 100px;
-
+  background-color: #00A0B1;
+  border-radius: 6px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
 }
 .form_track{
         display: flex;
