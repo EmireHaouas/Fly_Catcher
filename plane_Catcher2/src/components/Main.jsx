@@ -5,7 +5,6 @@ import image_header from '../assets/imgs/img_header.png';
 import plane_icon from '../assets/imgs/plane_icon.png';
 import Arrow_img from '../assets/imgs/arrow.png';
 import active_Flight from '../assets/imgs/active_icon.gif';
-import flight_info from '../assets/imgs/flight_info.png';
 import clock_icon from '../assets/imgs/clock_icon.png';
 import plane_moving from '../assets/imgs/plane_moving.gif';
 import Bottom_arrow_icon from '../assets/imgs/Bottom_arrow_icon.png';
@@ -21,6 +20,9 @@ import window_img from '../assets/imgs/window_img.jpg';
 import window_sea from '../assets/imgs/window_sea.jpg';
 import plane_art from '../assets/imgs/plane_art.jpg';
 import plane_building from '../assets/imgs/plane_building.jpg';
+import departure_infos from '../assets/imgs/departure_infos.png';
+import ticket_flight from '../assets/imgs/ticket_flight.png';
+import stay_updated from '../assets/imgs/stay_updated.png';
 
 const Main = () => {
     const [flightId, setFlightId] = useState('');
@@ -212,7 +214,7 @@ const Main = () => {
                   <div className='text_Steps'>
                     
                         <div className='step1'>
-                            <img className='travel_Icon' alt='' src={travel_icon}/>
+                            <img className='travel_Icon' alt='' src={ticket_flight}/>
                               < div className='sub_Step1'>
                             <h4 className='h4_Step1'>Enter Your Flight Number</h4>
                             <p className='p_Step1'>Start by entering your flight number in the search bar. <br></br>
@@ -222,7 +224,7 @@ const Main = () => {
                     </div>
                     
                     <div className='step2'>
-                            <img className='travel_Icon' alt='' src={travel_icon}/>
+                            <img className='travel_Icon' alt='' src={departure_infos}/>
                             <div className='sub_Step2'>
                             <h4 className='h4_Step2'>Check Your Flight Details</h4>
                             <p className='p_Step2'>Get access to real-time information, including departure<br></br>
@@ -233,7 +235,7 @@ const Main = () => {
                     </div>
                    
                     <div className='step3'>
-                            <img className='travel_Icon' alt='' src={travel_icon}/>
+                            <img className='travel_Icon' alt='' src={stay_updated}/>
                             <div className='sub_Step3'>
                             <h4 className='h4_Step3'>Stay Updated on Your Flight's Status</h4>
                             <p className='p_Step3'>Follow your flight’s progress with up-to-date information<br></br>
@@ -264,8 +266,7 @@ const Main = () => {
                 <h4 className='h4_Why'>Why Choose Us ?</h4>
                 <p className='p_Why'>Track your flights effortlessly with our intuitive platform, designed to deliver real-time updates and <br></br>
                 comprehensive flight details at your fingertips. Whether you're monitoring arrivals, departures, or<br></br>
-                mid-flight progress, our service provides precise data, ensuring you're always informed.<br></br> 
-                 turpis condimentum lobortis.</p>
+                mid-flight progress, our service provides precise data, ensuring you're always informed.<br></br></p>
                  <p className='p_Why2'>With user-friendly tools, seamless navigation, and instant access to essential information like flight<br></br> 
                  delays, gate changes, and weather conditions, we make tracking your journey stress-free. Rely on us <br></br>
                  for accuracy, convenience, and peace of mind, every step of the way. </p>
