@@ -214,18 +214,20 @@ const Main = () => {
                         <div className='step1'>
                             <img className='travel_Icon' alt='' src={travel_icon}/>
                               < div className='sub_Step1'>
-                            <h4 className='h4_Step1'>Choose Destination</h4>
-                            <p className='p_Step1'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br></br>
-                               Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</p>
+                            <h4 className='h4_Step1'>Enter Your Flight Number</h4>
+                            <p className='p_Step1'>Start by entering your flight number in the search bar. <br></br>
+                                This unique identifier ensures that you track the<br></br> 
+                                exact flight you're interested in.</p>
                             </div>
                     </div>
                     
                     <div className='step2'>
                             <img className='travel_Icon' alt='' src={travel_icon}/>
                             <div className='sub_Step2'>
-                            <h4 className='h4_Step2'>Choose Destination</h4>
-                            <p className='p_Step2'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br></br>
-                               Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</p>
+                            <h4 className='h4_Step2'>Check Your Flight Details</h4>
+                            <p className='p_Step2'>Get access to real-time information, including departure<br></br>
+                                                   and arrival times, ate numbers, and possible delays. Stay<br></br>
+                                                   informed and updated with all the critical details.</p>
                             </div>
                        
                     </div>
@@ -233,9 +235,10 @@ const Main = () => {
                     <div className='step3'>
                             <img className='travel_Icon' alt='' src={travel_icon}/>
                             <div className='sub_Step3'>
-                            <h4 className='h4_Step3'>Choose Destination</h4>
-                            <p className='p_Step3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br></br>
-                               Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</p>
+                            <h4 className='h4_Step3'>Stay Updated on Your Flight's Status</h4>
+                            <p className='p_Step3'>Follow your flight’s progress with up-to-date information<br></br>
+                                                   about its schedule and any changes along the way. Never<br></br> 
+                                                   miss a beat with instant notifications on your flight's status.</p>
                            </div>
                     </div>
                   </div>
@@ -259,12 +262,13 @@ const Main = () => {
                 
                 <div className='card_Why'>
                 <h4 className='h4_Why'>Why Choose Us ?</h4>
-                <p className='p_Why'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et<br></br>
-                 velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora<br></br>
-                 torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at<br></br> 
+                <p className='p_Why'>Track your flights effortlessly with our intuitive platform, designed to deliver real-time updates and <br></br>
+                comprehensive flight details at your fingertips. Whether you're monitoring arrivals, departures, or<br></br>
+                mid-flight progress, our service provides precise data, ensuring you're always informed.<br></br> 
                  turpis condimentum lobortis.</p>
-                 <p className='p_Why2'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et<br>
-                 </br> velit interdum, ac aliquet odio mattis.</p>
+                 <p className='p_Why2'>With user-friendly tools, seamless navigation, and instant access to essential information like flight<br></br> 
+                 delays, gate changes, and weather conditions, we make tracking your journey stress-free. Rely on us <br></br>
+                 for accuracy, convenience, and peace of mind, every step of the way. </p>
                  <div className='row_Card'>
                     <div className='box_1'>
                         <p className='p_Box1'>5K+</p>
