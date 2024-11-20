@@ -15,6 +15,12 @@ import tower from '../assets/imgs/tower.gif';
 import flying_plane from '../assets/imgs/flying_plane.gif';
 import step_img from '../assets/imgs/step_img.jpg';
 import travel_icon from '../assets/imgs/travel_icon.png';
+import plane_jp from '../assets/imgs/plane_jp.jpg';
+import spec1 from '../assets/imgs/spec1.jpg';
+import window_img from '../assets/imgs/window_img.jpg';
+import window_sea from '../assets/imgs/window_sea.jpg';
+import plane_art from '../assets/imgs/plane_art.jpg';
+import plane_building from '../assets/imgs/plane_building.jpg';
 
 const Main = () => {
     const [flightId, setFlightId] = useState('');
@@ -197,7 +203,7 @@ const Main = () => {
             </section>
             <section className='track_Steps'>
                 <div className=''>
-                    <h2 className='h2_Steps'>Book Your next trip<br></br>
+                    <h2 className='h2_Steps'>Track Your next Flight<br></br>
                                              in 3 easy steps
                     </h2>
 
@@ -237,9 +243,43 @@ const Main = () => {
                     
                 </div>
             </section>
-            <section>
-                <div className=''>
+            <section className='late'>
+                <div className='pres_Why'>
+                <div className='column_Img'>
+                    <div className='row1_Img'>
+                        <img className='plane_Building' alt='' src={plane_building}/>
+                        <img className='window_Sea' alt='' src={window_sea}/>
+                    </div>
+                    <div className='row2_Img'>
+                       <img className='plane_Art' alt='' src={plane_art}/>
+                       <img className='spec1' alt='' src={spec1}/>
+                    </div>
 
+                </div>
+                
+                <div className='card_Why'>
+                <h4 className='h4_Why'>Why Choose Us ?</h4>
+                <p className='p_Why'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et<br></br>
+                 velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora<br></br>
+                 torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at<br></br> 
+                 turpis condimentum lobortis.</p>
+                 <p className='p_Why2'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et<br>
+                 </br> velit interdum, ac aliquet odio mattis.</p>
+                 <div className='row_Card'>
+                    <div className='box_1'>
+                        <p className='p_Box1'>5K+</p>
+                        <p className='p2_Box1'>Sucess Tour</p>
+                    </div>
+                    <div className='box_2'>
+                        <p className='p_Box2'>10K+</p>
+                        <p className='p2_Box2'>Happy Clients</p>
+                    </div>
+                    <div className='box_3'>
+                        <p className='p_Box3'>15+</p>
+                        <p className='p2_Box3'>Years Experience</p>
+                    </div>
+                 </div>
+                </div>
                 </div>
             </section>
         </main>
