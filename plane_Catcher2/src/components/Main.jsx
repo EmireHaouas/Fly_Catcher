@@ -82,7 +82,7 @@ const Main = () => {
     return (
         <main>
             <article className='article_flex'>
-                <img src={image_header} alt='Des' />
+                <img className='img_Header' src={image_header} alt='Des' />
                 <div className='container_flex2'>
                     <img className='active_Flight' alt='' src={active_Flight} />
                     <h1 className='h1_article_flex'>EXPLORE THE WORLD</h1>

@@ -126,7 +126,7 @@ input[type="date"] {
     border: 1px solid #ccc; /* Bordure */
     border-radius: 5px;   /* Coins arrondis */
     outline: none;        /* Supprime l'effet de contour par défaut */
-    width: 100%;          /* Permet au champ de remplir l'espace disponible */
+   /* width: 100%;     */     /* Permet au champ de remplir l'espace disponible */
 }
 
 /* Optionnel : Ajoutez un style pour le focus */
@@ -492,4 +492,171 @@ hr{
     font-size: 25px;
     font-weight: bold;
     letter-spacing: 1px;
+}
+@media (max-width: 480px) {
+
+    .img_Header{
+        width: 250px;
+        height: 250px;
+        display: none;
+    }
+    .h2_article_flex{
+        font-size: 42px;
+    }
+    .h1_article_flex{
+        font-size: 20px;
+
+    }
+    .p_article_flex{
+        font-size: 13px;
+        margin-left: 20px;
+        margin-right: 10px;
+    }
+    .active_Flight{
+       width: 60px;
+    }
+    .container_flex2{
+        margin-top: 5px;
+    }
+    .h1_form{
+        font-size: 40px;
+        margin-left: 0px;
+    }
+    .flight_idnumber{
+        padding-left: 0px;
+        margin-left: 0px;
+        max-width: 189px;
+        height: 20px;
+}
+    .form_track{
+        display: flex;
+        flex-direction: column;
+        align-items: first baseline;
+    }
+    .date_Flight{
+        width: 209px;
+        margin-left: 0;
+
+    }
+    .Form_iata{
+        padding-bottom: 150px;
+    }
+    .h3_cards{
+        font-size: 38px;
+        margin-right: 8px;
+    }
+    .card_Flightinfos{
+        font-size: 16px;
+    }
+    .terminals_design, .gates_design{
+        margin-left: 0;
+    }
+    .bottom_arrow_icon {
+        width: 30px;
+        height: 30px;
+    }
+    .landing_plane, .takeoff_plane, .tower_icon{
+        height: 50px;
+        width: 50px;
+    }
+    .h2_Steps{
+        letter-spacing: 1px;
+        margin-left: 60px;
+        font-size: 43px;
+    }
+    .step_Img{
+        width: 350px;
+        height: 250px;
+        margin-left: 40px;
+    }
+    .text_Img{
+        flex-direction: column;
+        margin-top: 0px;
+        margin-right: 15px;
+        padding-bottom: 80px;
+    }
+    .travel_Icon{
+        width: 40px;
+        height: 40px;
+        margin-left: 20px;
+        margin-right: 30px;
+    }
+    .p_Step1, .p_Step2, .p_Step3{
+        font-size: 14px;
+    }
+    .h4_Step1, .h4_Step2, .h4_Step3{
+        font-size: 24px;
+    }
+    
+    .h4_Why{
+        font-size: 38px;
+    }
+    .pres_Why{
+        display: flex;
+        flex-direction: column-reverse;
+
+    }
+    .box_1{
+    margin-right: 0px;
+    padding-right: 10px;
+    margin-left: 20px;    
+}
+    .box_2{
+    margin-right: 0px;
+    margin-left: 0px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+    .box_3{
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.p_Box1, .p_Box2, .p_Box3{
+    font-size: 38px;
+}
+.p2_Box1, .p2_Box2, .p2_Box3{
+    font-size: 21px;
+}
+.p_Why{
+    font-size: 16px;
+    padding-left: 10px;
+    padding-right: 5px;
+}
+.p_Why2{
+    font-size: 16px;
+    padding-left: 10px;
+    padding-right: 5px;
+}
+.plane_Building{
+    height: 200px;
+    width: 180px;
+    margin-right: 5px;
+}
+.plane_Art{
+    height: 200px;
+    width: 180px;
+    margin-top: 15px;
+    margin-right: 5px;
+
+}
+.window_Sea{
+    height: 200px;
+    width: 180px;
+    margin-left: 5px;
+
+}
+.spec1{
+    height: 200px;
+    width: 180px;
+    margin-top: 15px;
+    margin-left: 5px;
+}
+
+
+
+
+
+
+
+
 }

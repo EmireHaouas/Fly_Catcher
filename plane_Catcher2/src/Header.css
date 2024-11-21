@@ -38,3 +38,17 @@ body{
     padding-bottom: 5px;
     padding-top: 5px;
 }
+@media (max-width: 480px) {
+.logo{
+    width: 60px;
+    height: 60px;
+}
+.nav_flex{
+    font-size: 12px;
+    padding: 1px;
+}
+.track_Nav{
+    padding: 1px;
+}
+
+}
