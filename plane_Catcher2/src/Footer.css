@@ -58,6 +58,13 @@
 .logo{
     margin-bottom: 20px;
 }
+@media (max-width: 835px) {
+    .logo{
+        height: 100px;
+        width: 100px;
+    }
+}
+
 @media (max-width: 480px) {
     .whatsapp_Logo, .facebook_Logo, .instagram_Logo, .twitter_Logo{
         width: 15px;

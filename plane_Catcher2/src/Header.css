@@ -52,3 +52,10 @@ body{
 }
 
 }
+@media (max-width: 835px) {
+    .logo{
+        height: 150px;
+        width: 150px;
+    }
+
+}
