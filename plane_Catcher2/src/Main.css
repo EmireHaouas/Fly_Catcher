@@ -493,6 +493,121 @@ hr{
     font-weight: bold;
     letter-spacing: 1px;
 }
+
+@media (max-width: 1195px) {
+    .h2_article_flex{
+        font-size: 72px;
+    }
+    .h1_article_flex{
+        font-size: 22px;
+    }
+    .active_Flight{
+        width: 80px;
+    }
+    .h1_form{
+        font-size: 62px;
+        margin-left: 295px;
+    }
+    .flight_idnumber{
+        width: 215px;
+    }
+    .date_Flight{
+        width: 215px;
+    }
+    .landing_plane, .takeoff_plane, .tower_icon{
+        width: 60px;
+        height: 60px;
+    }
+    .Form_iata{
+        padding-bottom: 200px;
+    }
+    .h2_Steps{
+        font-size: 52px;
+    }
+    .step_Img{
+        width: 70%;
+       margin-left: 0px;
+       border-radius: 40px;
+    }
+    .text_Img{
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+        align-items: center;
+    }
+    .text_Steps{
+        display: flex;
+        flex-direction: row;
+        margin-top: 70px;
+        margin-bottom: 70px;
+    }
+    .step1{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .step2{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .step3{
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    .p_Step1, .p_Step2, .p_Step3{
+        font-size: 15px;
+    }
+    .travel_Icon{
+        width: 50px;
+        height: 50px;
+    }
+    .text_Steps{
+        margin-bottom: 70px;
+    }
+    .h4_Why{
+        font-size: 52px;
+    }
+    .p_Why, .p_Why2{
+        font-size: 16px;
+    }
+    .plane_Art{
+        height: 240px;
+        width: 220px;
+        margin-left: 10px;
+        margin-top: 15px;
+
+    }
+    .plane_Building{
+        width: 220px;
+        height: 240px;
+        margin-left: 10px;
+        margin-bottom: 0;
+
+    }
+    .spec1{
+        width: 220px;
+        height: 240px;
+        margin-top: 15px;
+        margin-left: 5px;
+
+    }
+    .window_Sea{
+        height: 240px;
+        width: 220px;
+        margin-left: 5px;
+
+    }
+    .card_Why{
+        margin-left: 40px;
+    }
+    .p_Box1, .p_Box2, .p_Box3{
+        font-size: 38px
+    }
+    .p2_Box1, .p2_Box2, .p2_Box3{
+        font-size: 18px;
+    }
+
+}
+
 @media (max-width: 835px) {
     .img_Header{
         width: 406px;

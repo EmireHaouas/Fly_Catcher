@@ -58,6 +58,15 @@
 .logo{
     margin-bottom: 20px;
 }
+
+@media (max-width: 1195px) {
+    .logo{
+        height: 100px;
+        width: 100px;
+    }
+
+}
+
 @media (max-width: 835px) {
     .logo{
         height: 100px;

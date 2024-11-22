@@ -38,6 +38,22 @@ body{
     padding-bottom: 5px;
     padding-top: 5px;
 }
+
+@media (max-width: 1195px){
+        .logo{
+            width: 150px;
+            height: 150px;
+        }
+        .img_Header{
+            width: 495px;
+            height: 595px;
+        }
+        .h2_article_flex{
+            font-size: 72px;
+            margin-left: 40px;
+        }
+}
+
 @media (max-width: 480px) {
 .logo{
     width: 60px;
