@@ -81,7 +81,7 @@ const Main = () => {
 
     return (
         <main>
-            <article className='article_flex'>
+            <article id='home' className='article_flex'>
                 <img className='img_Header' src={image_header} alt='Des' />
                 <div className='container_flex2'>
                     <img className='active_Flight' alt='' src={active_Flight} />
@@ -96,7 +96,7 @@ const Main = () => {
                 </div>
             </article>
 
-            <section className='Form_iata'>
+            <section id='form_Iata' className='Form_iata'>
                 <h1 className='h1_form'>Track Your Flight Now</h1>
 
                 {/*/test image landing et t/o */}
@@ -203,7 +203,7 @@ const Main = () => {
                     </div>
                 )}
             </section>
-            <section className='track_Steps'>
+            <section id='track_Steps' className='track_Steps'>
                 <div className=''>
                     <h2 className='h2_Steps'>Track Your next Flight<br></br>
                                              in 3 easy steps
@@ -248,7 +248,7 @@ const Main = () => {
                     
                 </div>
             </section>
-            <section className='late'>
+            <section id='why_Us' className='late'>
                 <div className='pres_Why'>
                 <div className='column_Img'>
                     <div className='row1_Img'>

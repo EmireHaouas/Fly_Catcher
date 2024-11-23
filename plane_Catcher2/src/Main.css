@@ -1,7 +1,18 @@
 body {
     margin: 0;
 }
-
+button{
+    cursor: pointer;
+}
+button:active{
+    transform: scale(0.98); /* Lien rétréci au clic */
+    transition: transform 0.2s ease; /* Animation de 0.2s */
+    /*background-color: #ff9900;*/
+}
+button:hover{
+    color: #00A0B1;
+    background-color: #333;
+}
 .container_flex2 {
     display: flex;
     flex-direction: column;
@@ -12,6 +23,7 @@ body {
 .article_flex {
     display: flex;
     flex-direction: row;
+    margin-top: 200px;
 }
 
 .h1_article_flex {
@@ -875,12 +887,12 @@ hr{
     font-size: 21px;
 }
 .p_Why{
-    font-size: 16px;
+    font-size: 14px;
     padding-left: 10px;
     padding-right: 5px;
 }
 .p_Why2{
-    font-size: 16px;
+    font-size: 14px;
     padding-left: 10px;
     padding-right: 5px;
 }
