@@ -56,7 +56,7 @@ const Main = () => {
         setFlightData(null);
 
         try {
-            const apiUrl = `https://api.aviationstack.com/v1/flights?access_key=8220daaf1cbcf21675c05bbc402fcc7d&flight_iata=${flightId}&date=${date}`;
+            const apiUrl = `https://api.aviationstack.com/v1/flights?access_key=f1e5e935d3d39352f9cbcfcd1f46a963&flight_iata=${flightId}&date=${date}`;
             const response = await fetch(apiUrl);
 
             if (!response.ok) {
