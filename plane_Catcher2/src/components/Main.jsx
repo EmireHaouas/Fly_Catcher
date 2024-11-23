@@ -141,6 +141,11 @@ const Main = () => {
                             </div>
                           <div className="entiresection_wrap">
                             <div className="entire_section">
+                                <div className="zero_Row">
+                                <p>{flightData.airline.name} {flightData.flight.number}</p>
+                                <p>{flightData.flight.iata}</p>
+
+                                </div>
                                 <div className="first_Row">
                                     <p className='airport_Dep'>{flightData.departure.airport}</p>
                                     <p>
@@ -192,12 +197,12 @@ const Main = () => {
                             <ToggleButton onClick={toggleGeekInfosVisibility} />
                             {isGeekInfosVisible && (
                                 <div className='geek_infos'>
-                                    <p className='airline'><span>Airline:</span> {flightData.airline.name}</p>
-                                    <p><span>Status:</span> {flightData.flight_status}</p>
-                                    <p><span>Aircraft Model:</span> {flightData.aircraft.icao}</p>
-                                    <p><span>Departure Delay:</span> {flightData.departure.delay}</p>
-                                    <p><span>Tail Number:</span> <span>{flightData.aircraft.registration}</span></p>
-                                </div>
+                                <p className='airline'><span>Airline:</span> {flightData.airline.name}</p>
+                                <p><span>Status:</span> {flightData.flight_status}</p>
+                                <p><span>Aircraft Model:</span> {flightData.aircraft.icao}</p>
+                                <p><span>Departure Delay:</span> {flightData.departure.delay}</p>
+                                <p><span>Tail Number:</span> <span>{flightData.aircraft.registration}</span></p>
+                            </div>
                             )}
                         </div>
                     </div>

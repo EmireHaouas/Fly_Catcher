@@ -271,7 +271,7 @@ display: flex;
     letter-spacing: 2px;
 }
 
-.first_Row, .second_Row, .third_Row, .fourth_Row, .fifth_Row, .sixth_Row{
+.zero_Row, .first_Row, .second_Row, .third_Row, .fourth_Row, .fifth_Row, .sixth_Row{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -505,6 +505,7 @@ hr{
     font-weight: bold;
     letter-spacing: 1px;
 }
+
 
 @media (max-width: 1195px) {
     .h2_article_flex{
