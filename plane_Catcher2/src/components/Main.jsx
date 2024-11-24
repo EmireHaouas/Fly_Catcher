@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
-import ToggleButton from './ToggleButton'; // Import du composant ToggleButton
 import '../Main.css';
 import image_header from '../assets/imgs/img_header.png';
-import plane_icon from '../assets/imgs/plane_icon.png';
 import Arrow_img from '../assets/imgs/arrow.png';
 import active_Flight from '../assets/imgs/active_icon.gif';
 import clock_icon from '../assets/imgs/clock_icon.png';
@@ -13,10 +11,7 @@ import landing_plane from '../assets/imgs/landing_plane.gif';
 import tower from '../assets/imgs/tower.gif';
 import flying_plane from '../assets/imgs/flying_plane.gif';
 import step_img from '../assets/imgs/step_img.jpg';
-import travel_icon from '../assets/imgs/travel_icon.png';
-import plane_jp from '../assets/imgs/plane_jp.jpg';
 import spec1 from '../assets/imgs/spec1.jpg';
-import window_img from '../assets/imgs/window_img.jpg';
 import window_sea from '../assets/imgs/window_sea.jpg';
 import plane_art from '../assets/imgs/plane_art.jpg';
 import plane_building from '../assets/imgs/plane_building.jpg';
@@ -146,6 +141,7 @@ const Main = () => {
                                 <p>{flightData.flight.iata}</p>
 
                                 </div>
+                                
                                 <div className="first_Row">
                                     <p className='airport_Dep'>{flightData.departure.airport}</p>
                                     <p>
@@ -175,7 +171,7 @@ const Main = () => {
                                     <p className='airport_arrival'>{flightData.arrival.airport}</p>
                                     <p>
                                         <span className='gates_design'>
-                                            <img className='Arrow_img' alt='arrow' src={Arrow_img} />
+                                            <img className='Arrow_img' alt='arrow icon' src={Arrow_img} />
                                             {flightData.arrival.gate}
                                         </span>
                                     </p>
@@ -185,7 +181,7 @@ const Main = () => {
                                     <p className='arrival_Time'>{formatLocalTime(flightData.arrival.estimated)}</p>
                                     <p>
                                         <span className='terminals_design'>
-                                            <img className='Arrow_img' alt='arrow' src={Arrow_img} />
+                                            <img className='Arrow_img' alt='arrow icon' src={Arrow_img} />
                                             {flightData.arrival.terminal}
                                         </span>
                                     </p>
@@ -288,12 +284,16 @@ const Main = () => {
                         <p className='p_Box3'>15+</p>
                         <p className='p2_Box3'>Years Experience</p>
                     </div>
+                  
                  </div>
                 </div>
                 </div>
             </section>
         </main>
+        
     );
 };
 
+
+{/*Developed by Emire H */}
 export default Main;
