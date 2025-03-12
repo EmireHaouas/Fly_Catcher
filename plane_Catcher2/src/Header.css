@@ -2,10 +2,10 @@ body{
     background-color: #F5F5F5;
 }
 nav a:active {
-    transform: scale(0.98); /* Lien rétréci au clic */
-    transition: transform 0.2s ease; /* Animation de 0.2s */
-    background-color: #ff9900; /* Change la couleur de fond au clic */
-  /*  animation: pulse 0.6s ease-in-out;*/
+    transform: scale(0.98); 
+    transition: transform 0.2s ease; 
+    background-color: #ff9900; 
+  
 }
 .nav_Real{
     display: flex;
@@ -14,8 +14,8 @@ nav a:active {
  
   
 nav a:hover {
-    color: #00A0B1;; /* Couleur du texte quand on survole (orange ici) */
-    background-color: #333; /* Ajouter une couleur de fond au survol */
+    color: #00A0B1;; 
+    background-color: #333; 
   }
   .nav_Home{
     border-radius: 20px;
