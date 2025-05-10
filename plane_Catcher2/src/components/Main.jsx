@@ -1,8 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../Main.css";
-import FTracker from "./FTracker/FTracker";
-import mapBackground from "../assets/imgs/Map.webp";
-import aircraftBackground from "../assets/imgs/aircraft3d.webp";
+import BoardingPassUI from "./BoardingPassUI/BoardingPassUI.jsx";
 import step_img from "../assets/imgs/step_img.jpg";
 import spec1 from "../assets/imgs/spec1.jpg";
 import window_sea from "../assets/imgs/window_sea.jpg";
@@ -11,69 +9,83 @@ import plane_building from "../assets/imgs/plane_building.jpg";
 import departure_infos from "../assets/imgs/departure_infos.png";
 import ticket_flight from "../assets/imgs/ticket_flight.png";
 import stay_updated from "../assets/imgs/stay_updated.png";
-import Header from "./Header.jsx";
+import FormTracking from "./FormTracking/FormTracking.jsx";
+import Loading from "./Loading/Loading.jsx";
+import FlightError from "./FlightError/FlightError.jsx";
+import aircraftLoading from "../assets/imgs/aircraftLoading.gif";
+
 
 const Main = () => {
+    const apiKey = 'f1e5e935d3d39352f9cbcfcd1f46a963'
     const [flightId, setFlightId] = useState("");
     const [date, setDate] = useState("");
     const [flightData, setFlightData] = useState(null);
     const [error, setError] = useState(null);
     const [isGeekInfosVisible, setIsGeekInfosVisible] = useState(false);
+    const [loading, setLoading] = useState(false);
 
-    const formatLocalTime = (timestamp) => {
-        const date = new Date(timestamp);
-        return date.toLocaleTimeString("fr-FR", {
-            hour: "2-digit",
-            minute: "2-digit",
-            hour12: false,
-        });
-    };
+    useEffect(() => {
+        const img = new Image();
+        img.src = aircraftLoading;
+    }, []);
 
-    const calculateFlightDuration = (departure, arrival) => {
-        const departureTime = new Date(departure);
-        const arrivalTime = new Date(arrival);
-        const durationInMinutes = (arrivalTime - departureTime) / 60000;
-
-        const hours = Math.floor(durationInMinutes / 60);
-        const minutes = durationInMinutes % 60;
-        return `${hours}h ${minutes}m`;
-    };
 
     const handleSubmit = async (event) => {
         event.preventDefault();
         setError(null);
         setFlightData(null);
+        setLoading(true);
+
+        const MIN_LOADING_TIME = 2000; // 2 secondes minimum
+
+        const startTime = Date.now();
 
         try {
-            const apiUrl = `https://api.aviationstack.com/v1/flights?access_key=f1e5e935d3d39352f9cbcfcd1f46a963&flight_iata=${flightId}&date=${date}`;
+            const apiUrl = `https://api.aviationstack.com/v1/flights?access_key=${apiKey}&flight_iata=${flightId}&date=${date}`;
             const response = await fetch(apiUrl);
-
-            if (!response.ok) {
-                throw new Error("Erreur lors de la récupération des données.");
-            }
-
             const data = await response.json();
 
-            if (data.data && data.data.length > 0) {
-                setFlightData(data.data[0]);
-            } else {
-                setError("Aucun vol trouvé pour ce numéro et cette date.");
-            }
+            const elapsed = Date.now() - startTime;
+            const delay = Math.max(0, MIN_LOADING_TIME - elapsed);
+
+            setTimeout(() => {
+                if (data.data && data.data.length > 0) {
+                    setFlightData(data.data[0]);
+                } else {
+                    setError("No flight found for this number and date.");
+                }
+                setLoading(false);
+            }, delay);
         } catch (error) {
-            setError(error.message);
+            setError("Unable to retrieve data. Please try again.");
+            setLoading(false);
         }
     };
+
+
 
     const toggleGeekInfosVisibility = () => {
         setIsGeekInfosVisible(!isGeekInfosVisible);
     };
 
     return (
-        <main className='main'>
-            <Header />
+        <main className="main">
 
-            {/* FIN --------------- > */}
-            <FTracker />
+
+            <FormTracking
+                flightId={flightId}
+                setFlightId={setFlightId}
+                date={date}
+                setDate={setDate}
+                handleSubmit={handleSubmit}
+            />
+            <div className='flightDetailsSection'>
+                {loading && <Loading />}
+                {error && <FlightError error={error} />}
+                {flightData && <BoardingPassUI flightData={flightData} />}
+            </div>
+
+
 
             <section id="track_Steps" className="track_Steps">
                 <div className="">

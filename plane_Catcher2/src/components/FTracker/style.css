@@ -5,8 +5,8 @@ button{
     cursor: pointer;
 }
 button:active{
-    transform: scale(0.98); 
-    transition: transform 0.2s ease; 
+    transform: scale(0.98);
+    transition: transform 0.2s ease;
 
 }
 button:hover{
@@ -17,7 +17,7 @@ button:hover{
     display: flex;
     flex-direction: column;
     margin-top: 60px;
-    margin-left: 20px; 
+    margin-left: 20px;
 }
 
 .article_flex {
@@ -61,7 +61,7 @@ main {
     font-weight: 700;
     padding: 5px;
     font-size: 18px;
-    width: 150px; 
+    width: 150px;
 }
 
 .Form_iata {
@@ -89,7 +89,7 @@ main {
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  
+
 }
 .date_Flight{
     margin-left: 100px;
@@ -131,22 +131,22 @@ input[type="text"]:not(:placeholder-shown) + label {
     color: black;
 }
 input[type="date"] {
-    max-width: 320px; 
-    height: 31px;       
-    padding: 5px;         
-    font-size: 16px;      
+    max-width: 320px;
+    height: 31px;
+    padding: 5px;
+    font-size: 16px;
     border: 1px solid #ccc;
-    border-radius: 5px;   
-    outline: none;        
+    border-radius: 5px;
+    outline: none;
 
 }
 
 
 input[type="date"]:focus {
-    border-color: #007bff; 
+    border-color: #007bff;
 }
 
-.button_submit{ 
+.button_submit{
   font-size: 18px;
   padding: 5px;
   margin-left: 100px;
@@ -175,7 +175,7 @@ input[type="date"]:focus {
     flex-direction: column;
     align-items: center;
 }
-.airport_Dep{ 
+.airport_Dep{
 display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -241,7 +241,7 @@ display: flex;
 .cd2{
     display: flex;
     flex-direction: column;
-    margin-left: 241px; 
+    margin-left: 241px;
 }
 .section_2{
     display: flex;
@@ -280,9 +280,9 @@ display: flex;
 }
 
 hr{
-    margin: 5px 0 0; 
-    border: 1px solid black; 
-    width: calc(100% + 5px); 
+    margin: 5px 0 0;
+    border: 1px solid black;
+    width: calc(100% + 5px);
     border-radius: 5px;
 }
 .terminals_design, .gates_design{
@@ -681,7 +681,7 @@ hr{
     display: flex;
     flex-direction: row;
 
-    
+
 
    }
    .text_Img{
@@ -755,7 +755,7 @@ hr{
     width: 230px;
    }
 
-    
+
 }
 
 @media (max-width: 480px) {
@@ -867,7 +867,7 @@ hr{
     .h4_Step1, .h4_Step2, .h4_Step3{
         font-size: 24px;
     }
-    
+
     .h4_Why{
         font-size: 38px;
     }
@@ -879,7 +879,7 @@ hr{
     .box_1{
     margin-right: 0px;
     padding-right: 10px;
-    margin-left: 20px;    
+    margin-left: 20px;
 }
     .box_2{
     margin-right: 0px;
@@ -933,7 +933,7 @@ hr{
 }
 .entire_section{
     padding: 30px 18px 30px 18px;
-    margin: 0px 2px 0px 2px; 
+    margin: 0px 2px 0px 2px;
 }
 .entiresection_wrap{
     width: 98%;

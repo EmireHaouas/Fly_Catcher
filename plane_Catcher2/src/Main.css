@@ -5,196 +5,9 @@ html, body {
 .main{
     margin: 0;
     padding: 0;
-}
-button{
-    cursor: pointer;
-}
-button:active{
-    transform: scale(0.98); 
-    transition: transform 0.2s ease; 
-
-}
-button:hover{
-    color: #00A0B1;
-    background-color: #333;
-}
-.container_flex2 {
-    display: flex;
-    flex-direction: column;
-    margin-top: 60px;
-    margin-left: 20px; 
+    background: #010223;
 }
 
-
-.aircraftBackgroundImg{
-    width: 60%;
-    height: auto;
-}
-
-
-.h1_article_flex {
-    color: #00A0B1;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-}
-
-.h2_article_flex {
-    color: #000000;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    font-size: 85px;
-    margin-bottom: 50.7px;
-    margin-top: 30px;
-}
-
-.p_article_flex {
-    color: #A1A1A1;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-}
-
-main {
-    margin-top: 20px;
-}
-
-.button1 {
-    background-color: #00A0B1;
-    color: #FFFFFF;
-    width: auto;
-    border-style: solid;
-    border-radius: 10px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-    padding: 5px;
-    font-size: 18px;
-    width: 150px; 
-}
-
-.Form_iata {
-    background-color: rgba(153, 235, 244, 0.3);
-    margin-top: 200px;
-    font-family: 'Roboto', sans-serif;
-    padding-bottom: 400px;
-    border-top-left-radius: 40px;
-    border-top-right-radius: 40px;
-}
-
-
-.h1_form {
-    font-size: 70px;
-    padding-top: 50px;
-    margin-left: 450px;
-}
-
-.flight_idnumber {
-    height: 20px;
-    width: 31px;
-    max-width: 350px;
-    padding: 5px 5px 5px 5px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  
-}
-.date_Flight{
-    margin-left: 100px;
-}
-.form_group {
-    position: relative;
-    margin-bottom: 20px;
-}
-
-input[type="text"] {
-    width: 300px;
-    padding: 10px 15px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    outline: none;
-}
-
-input[type="text"]:focus {
-    border-color: #007bff;
-}
-
-
-label {
-    position: absolute;
-    top: 10px;
-    left: 15px;
-    color: #999;
-    font-size: 16px;
-    transition: 0.3s ease;
-    pointer-events: none;
-}
-
-input[type="text"]:focus + label,
-input[type="text"]:not(:placeholder-shown) + label {
-    top: -20px;
-    left: 10px;
-    font-size: 12px;
-    color: black;
-}
-input[type="date"] {
-    max-width: 320px; 
-    height: 31px;      
-    padding: 5px;         
-    font-size: 16px;     
-    border: 1px solid #ccc; 
-    border-radius: 5px;   
-    outline: none;        
-
-}
-
-
-input[type="date"]:focus {
-    border-color: #007bff; 
-}
-
-.button_submit{ 
-  font-size: 18px;
-  padding: 5px;
-  margin-left: 100px;
-  background-color: #00A0B1;
-  border-radius: 6px;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-  font-size: 18px;
-}
-.form_track{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: baseline;
-        padding: 30px 20px 20px 20px;
-        border: solid;
-        border-radius: 50px;
-        background-color: #F5F5F5;
-}
-.test_1{
-    display: flex;
-    flex-direction: column;
-}
-.container_flex2{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.airport_Dep{ 
-display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-.plane_icon{
-    margin-right: 60px;
-}
-.card_details{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 80px;
-}
 .card_Flightinfos{
     display: flex;
     flex-direction: column;
@@ -247,7 +60,7 @@ display: flex;
 .cd2{
     display: flex;
     flex-direction: column;
-    margin-left: 241px; 
+    margin-left: 241px;
 }
 .section_2{
     display: flex;
@@ -286,9 +99,9 @@ display: flex;
 }
 
 hr{
-    margin: 5px 0 0; 
-    border: 1px solid black; 
-    width: calc(100% + 5px); 
+    margin: 5px 0 0;
+    border: 1px solid black;
+    width: calc(100% + 5px);
     border-radius: 5px;
 }
 .terminals_design, .gates_design{
@@ -519,7 +332,13 @@ hr{
     width: 100px;
     height: auto;
 }
-
+.flightDetailsSection{
+    width: 100%;
+    background: #010223;
+    padding: 200px 0;
+    display: flex;
+    justify-content: center;
+}
 
 
 @media  (max-width: 1195px) {
@@ -680,7 +499,7 @@ hr{
     display: flex;
     flex-direction: row;
 
-    
+
 
    }
    .text_Img{
@@ -754,7 +573,7 @@ hr{
     width: 230px;
    }
 
-    
+
 }
 
 @media (max-width: 480px) {
@@ -860,7 +679,7 @@ hr{
     .h4_Step1, .h4_Step2, .h4_Step3{
         font-size: 24px;
     }
-    
+
     .h4_Why{
         font-size: 38px;
     }
@@ -872,7 +691,7 @@ hr{
     .box_1{
     margin-right: 0px;
     padding-right: 10px;
-    margin-left: 20px;    
+    margin-left: 20px;
 }
     .box_2{
     margin-right: 0px;
@@ -926,7 +745,7 @@ hr{
 }
 .entire_section{
     padding: 30px 18px 30px 18px;
-    margin: 0px 2px 0px 2px; 
+    margin: 0px 2px 0px 2px;
 }
 .entiresection_wrap{
     width: 98%;
