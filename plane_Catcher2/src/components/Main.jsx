@@ -139,21 +139,21 @@ const Main = () => {
                     <img className="step_Img" alt="" src={step_img} />
                 </div>
             </section>
-            <section id="why_Us" className="late">
-                <div className="pres_Why">
+            <section id="why_Us" className="whyUsSection">
+                <div className="benefitsSection">
                     <div className="column_Img">
-                        <div className="row1_Img">
+                        <div className="upperRow_Img">
                             <img className="plane_Building" alt="" src={plane_building} />
                             <img className="window_Sea" alt="" src={window_sea} />
                         </div>
-                        <div className="row2_Img">
+                        <div className="lowerRow_Img">
                             <img className="plane_Art" alt="" src={plane_art} />
                             <img className="spec1" alt="" src={spec1} />
                         </div>
                     </div>
 
                     <div className="card_Why">
-                        <h4 className="h4_Why">Why Choose Us ?</h4>
+                        <h4 className="titleWhyUsSection">Why Choose Us ?</h4>
                         <p className="p_Why">
                             Track your flights effortlessly with our intuitive platform,
                             designed to deliver real-time updates and <br></br>
@@ -170,7 +170,8 @@ const Main = () => {
                             for accuracy, convenience, and peace of mind, every step of the
                             way.{" "}
                         </p>
-                        <div className="row_Card">
+
+                        <div className="statsSection">
                             <div className="box_1">
                                 <p className="p_Box1">5K+</p>
                                 <p className="p2_Box1">Sucess Tour</p>

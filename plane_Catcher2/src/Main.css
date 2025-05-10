@@ -43,7 +43,6 @@ html, body {
     padding-bottom: 10px;
     width: 100%;
     padding-top: 0;
-
     background-image: url('src/assets/imgs/backgroundMap.webp');
 
 }
@@ -73,9 +72,80 @@ html, body {
     border-radius: 40px;
     align-self: center;
 }
-.late img{
-    width: 180px;
+/*whyUsSection*/
+.whyUsSection{
+    background: rgba(49, 62, 247, 0.05);
 }
+
+.benefitsSection{
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 50px;
+}
+.statsSection{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+     text-align: center;
+ }
+.upperRow_Img, .lowerRow_Img{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.plane_Building{
+    border-bottom-right-radius: 20px;
+    width: 45%;
+    margin-right: 5px;
+    max-width: 180px;
+    max-height: 200px;
+}
+.window_Sea{
+    border-bottom-left-radius: 20px;
+    width: 45%;
+    max-width: 180px;
+    margin-left: 5px;
+    max-height: 200px;
+}
+.plane_Art{
+    border-top-right-radius: 20px;
+    width: 45%;
+    margin-right: 5px;
+    margin-top: 15px;
+    max-width: 180px;
+    max-height: 200px;
+}
+.spec1{
+    border-top-left-radius: 20px;
+    width: 45%;
+    margin-left: 5px;
+    margin-top: 15px;
+    max-width: 180px;
+    max-height: 200px;
+}
+.p_Box1, .p_Box2, .p_Box3{
+   font-size: 38px;
+    font-family: Poppins, sans-serif;
+}
+.p2_Box1, .p2_Box2, .p2_Box3{
+    font-size: 25px;
+    letter-spacing: 1px;
+    font-family: Inter, sans-serif;
+    font-weight: 300;
+}
+.titleWhyUsSection{
+    font-family: Poppins, sans-serif;
+    font-size: 38px;
+    text-align: center;
+}
+.p_Why, .p_Why2{
+    font-family: Inter, sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
 @media screen and (min-width: 768px) {
     .step1, .step2, .step3 {
         flex-direction: column;
@@ -86,6 +156,29 @@ html, body {
     }
     .text_Steps{
         padding-top: 50px;
+    }
+    /*whyUsSection*/
+    .plane_Building{
+        max-width: 230px;
+        max-height: 250px;
+        margin-right: 10px;
+    }
+    .window_Sea{
+        max-width: 230px;
+        max-height: 250px;
+        margin-left: 5px;
+    }
+    .plane_Art{
+        margin-top: 20px;
+        max-width: 230px;
+        max-height: 250px;
+        margin-right: 10px;
+    }
+    .spec1{
+        margin-top: 20px;
+        max-width: 230px;
+        max-height: 250px;
+        margin-left: 5px;
     }
 }
 @media screen and (min-width: 1160px) {
@@ -111,5 +204,20 @@ html, body {
     }
     .title_Steps{
         font-size: 42px;
+    }
+    /*whyUsSection*/
+    .benefitsSection{
+        flex-direction: row;
+       justify-content: space-evenly;
+    }
+    .card_Why{
+        width: 45%;
+    }
+    .column_Img{
+        width: 45%;
+        align-self: flex-end;
+    }
+    .p_Why, .p_Why2{
+        text-align: initial;
     }
 }

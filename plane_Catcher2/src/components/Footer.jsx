@@ -5,6 +5,7 @@ import whatsapp from '../assets/imgs/whatsapp.png';
 import twitter from '../assets/imgs/twitter.png';
 import instagram from '../assets/imgs/instagram.png';
 import facebook from '../assets/imgs/facebook.png';
+import footer_background from '../assets/imgs/footerBackgroundMap.webp';
 
 const Main = () => {
     return (
