@@ -23,5 +23,5 @@ const Main = () => {
     );
 };
 
-// Assurez-vous d'exporter le composant Main ici
+
 export default Main; 

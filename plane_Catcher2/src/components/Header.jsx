@@ -1,30 +1,30 @@
-import React from 'react';
-import '../Header.css';
-import logo from '../assets/imgs/logo.png';
-
+import React from "react";
+import "../Header.css";
+import aircraftBackground from "../assets/imgs/aircraft3d.webp";
 
 const Header = () => {
-    
     return (
-        <header className="header">
-            
-            <nav className='nav_header'>
-                <div className='nav_flex'>
-                <img className='logo' src={logo} alt='logo' />
-
-
-                     <a className='nav_Home' href="#home"><span className='span_nav'>H</span>ome</a>
-
-
-                     <a className='nav_How' href="#track_Steps">How it Works</a>
-
-                     <a className='track_Nav' href="#form_Iata">Track my Flight</a>
-
-                    <a className='nav_Why' href="#why_Us">Why Us</a>
-
-                </div>
-
+        <header className="Header">
+            <nav className="navBar">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a className="navTrack" href="#services">
+                    Track My Flight
+                </a>
+                <a href="#contact">Why Us</a>
             </nav>
+            <div className="bannerHeader">
+                <img
+                    className="aircraftBannerImg"
+                    src={aircraftBackground}
+                    alt="aircraft banner img"
+                />
+                <h1 className="titleHeader">Follow Your Flight Worldwide</h1>
+                <p className="subtitleHeader">
+                    Discover Every Aspect of Your Journey with Precise Flight Data and
+                    Up-to-Date Information
+                </p>
+            </div>
         </header>
     );
 };

@@ -1,5 +1,10 @@
-body {
+html, body {
     margin: 0;
+    padding: 0;
+}
+.main{
+    margin: 0;
+    padding: 0;
 }
 button{
     cursor: pointer;
@@ -20,11 +25,12 @@ button:hover{
     margin-left: 20px; 
 }
 
-.article_flex {
-    display: flex;
-    flex-direction: row;
-    margin-top: 200px;
+
+.aircraftBackgroundImg{
+    width: 60%;
+    height: auto;
 }
+
 
 .h1_article_flex {
     color: #00A0B1;
@@ -631,10 +637,6 @@ hr{
 }
 
 @media (max-width: 835px) {
-    .img_Header{
-        width: 406px;
-        height: 403px;
-    }
     .container_flex2{
         margin-right: 20px;
     }
@@ -652,10 +654,7 @@ hr{
     .active_Flight{
         width: 80px;
     }
-    .article_flex{
-        font-size: 14px;
-        margin-top: 150px;
-    }
+
     .button1{
         font-size: 16px;
     }
@@ -759,12 +758,6 @@ hr{
 }
 
 @media (max-width: 480px) {
-
-    .img_Header{
-        width: 250px;
-        height: 250px;
-        display: none;
-    }
     .h2_article_flex{
         font-size: 42px;
     }

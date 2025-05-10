@@ -1,104 +1,78 @@
-body{
-    background-color: #F5F5F5;
-}
-nav a:active {
-    transform: scale(0.98); 
-    transition: transform 0.2s ease; 
-    background-color: #ff9900; 
-  
-}
-.nav_Real{
+.navBar{
+    background-color: #010223;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    padding-top: 10px;
+    gap: 10%;
+    align-items: center;
 }
- 
-  
-nav a:hover {
-    color: #00A0B1;; 
-    background-color: #333; 
-  }
-  .nav_Home{
-    border-radius: 20px;
-  }
-  .nav_Why{
-    border-radius: 20px;
-  }
-  .nav_How{
-    border-radius: 20px;
-  }
-.logo{
-    width: 200px;
-    height: 200px;
-    border-style: solid;
-    border-radius: 20px;
+.navTrack{
+    border: 1px solid #FFF;
+    border-radius: 59px;
+    padding: 1% 2%;
+
 }
-.nav_header a{
-    color: #000000; 
+.navBar a:active{
+    color: #313EF7;
+    border-bottom: 2px solid #313EF7;
+}
+.navBar a{
     text-decoration: none;
-}
-.nav_flex{
-    display: flex;
-    justify-content: space-around;
-    font-family: 'Poppins', sans-serif;
+    font-family: Poppins,sans-serif;
     font-weight: 600;
-    font-size: 18px;
-    margin-top: 50px;
-    height: 30px;
+    font-size: 14px;
+    color : #FFFFFF;
+}
+.bannerHeader{
+    background: radial-gradient(50% 50% at 50% 50%, rgba(18, 20, 78, 0.90) 0%, #010223 100%), url('src/assets/imgs/Map.webp');
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    flex-direction: column;
+    align-items: center;
+}
+.titleHeader{
+    text-align: center;
+    color: #FFFFFF;
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    margin-bottom: 10px;
 
 }
-.span_nav{ 
-    text-decoration: underline;
-}
-.track_Nav{
-    height: 25px;
-    border-style: solid;
-    background-color: #00A0B1;
-    border-top-width: 1px;
-    border-right-width: 1px;
-    border-bottom-width: 1px;
-    border-left-width: 1px;
-    border-radius: 20px;
-    width: auto;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-bottom: 5px;
-    padding-top: 5px;
-}
-
-@media (max-width: 1195px){
-        .logo{
-            width: 150px;
-            height: 150px;
-        }
-        .img_Header{
-            width: 495px;
-            height: 595px;
-        }
-        .h2_article_flex{
-            font-size: 72px;
-            margin-left: 40px;
-        }
-}
-@media (max-width: 835px) {
-    .logo{
-        height: 150px;
-        width: 150px;
-    }
-
-}
-
-@media (max-width: 480px) {
-.logo{
-    width: 60px;
-    height: 60px;
-}
-.nav_flex{
+.subtitleHeader{
+    text-align: center;
+    color: rgba(255, 255, 255, 0.70);
+    font-family: Inter, sans-serif;
     font-size: 12px;
-    padding: 1px;
-}
-.track_Nav{
-    padding: 1px;
-}
-
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 0;
 }
 
+.aircraftBannerImg {
+    width: 80%;
+    height: auto;
+}
+@media screen and (min-width: 768px) {
+    .titleHeader{
+        font-size: 28px;
+    }
+    .subtitleHeader{
+        font-size: 14px;
+    }
+    .navBar a{
+        font-size: 15px;
+    }
+}
+@media screen and (min-width: 1160px) {
+    .titleHeader{
+        font-size: 48px;
+    }
+    .subtitleHeader{
+        font-size: 14px;
+    }
+}
