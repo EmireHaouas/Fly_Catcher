@@ -55,7 +55,8 @@
 }
 
 .ticket-body {
-    padding: 16px;
+    padding: 40px  16px 100px 16px;
+
 }
 
 .ticket-body h2 {
@@ -104,5 +105,13 @@
 
 .ticket {
     animation: fadeInUp 0.6s ease forwards;
+}
+@media screen and (min-width: 768px) {
+
+}
+@media screen and (min-width: 1160px) {
+    .ticket-body {
+        padding: 16px;
+    }
 }
 

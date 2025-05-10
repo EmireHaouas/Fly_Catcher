@@ -5,321 +5,7 @@ html, body {
 .main{
     margin: 0;
     padding: 0;
-    background: #010223;
-}
 
-.card_Flightinfos{
-    display: flex;
-    flex-direction: column;
-    font-size: 23px;
-}
-.gates_design, .terminals_design{
-    border: 1px solid;
-    background-color: yellow;
-    padding: 6px 25px;
-    border-radius: 8px;
-    font-weight: bold;
-    border-color: yellow;
-    border: solid;
-
-}
-.Arrow_img{
-    width: 15px;
-    height: 15px;
-    margin-right: 7px;
-}
-.clock_icon{
-    width: 30px;
-}
-.dede{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-.tgates{
-    display: flex;
-    flex-direction: column;
-    margin-left: 241px;
-}
-.clock{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-.active_Flight{
-    width: 100px;
-}
-.hr{
-    width: 430px;
-    margin-left: 5px;
-}
-.cd{
-    display: flex;
-    flex-direction: column;
-}
-.cd2{
-    display: flex;
-    flex-direction: column;
-    margin-left: 241px;
-}
-.section_2{
-    display: flex;
-    flex-direction: row;
-}
-.entire_section{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    font-family: "montserrat", sans-serif;
-    padding: 30px;
-    border-radius: 50px;
-    background-color: #F5F5F5;
-    border: solid;
-    letter-spacing: 2px;
-}
-.plane_moving{
-    width: 200px;
-}
-.h3_cards{
-    font-size: 45px;
-    letter-spacing: 2px;
-    margin-right: 50px;
-}
-.arrow_bottom{
-    width: 40px;
-    letter-spacing: 2px;
-}
-
-.zero_Row, .first_Row, .second_Row, .third_Row, .fourth_Row, .fifth_Row, .sixth_Row{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
-
-}
-
-hr{
-    margin: 5px 0 0;
-    border: 1px solid black;
-    width: calc(100% + 5px);
-    border-radius: 5px;
-}
-.terminals_design, .gates_design{
-    margin-left: 200px;
-}
-.geek_infos{
-    border: solid;
-    padding: 50px;
-    margin-top: 20px;
-    border-radius: 20px;
-    border-width: 2px;
-    background-color: #F5F5F5;
-    font-family: "montserrat", sans-serif;
-    letter-spacing: 3px;
-
-}
-.plane_moving{
-    width: 50px;
-}
-.Arrow_img.up {
-    transform: rotate(180deg);
-}
-
-.Arrow_img.down {
-    transform: rotate(0deg);
-}
-
-.landing_plane{
-    width: 80px;
-    margin-left: 40px;
-}
-.takeoff_plane{
-    width: 80px;
-    margin-right: 40px;
-}
-.tower_icon{
-    width: 80px;
-}
-.tolanding_icons{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.flying_plane{
-    width: 80px;
-    height: 80px;
-}
-.h3_moving{
-    display: flex;
-    flex-direction: row ;
-    align-items: first baseline;
-    margin-left: 80px;
-}
-.h2_Steps{
-    font-size: 48px;
-    font-family: 'Roboto', sans-serif;
-    letter-spacing: 2px;
-}
-.track_Steps{
-    background-color: #F5F5F5;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.step_Img{
-    width: 800px;
-    height: auto;
-    margin-left: 80px;
-    border-radius: 20px;
-}
-.teest1, .teest2, .teest3{
-    display: flex;
-    flex-direction: column;
-}
-.text_Steps{
-    display: flex;
-    flex-direction: column;
-    margin-top: 70px;
-}
-.text_Img{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-bottom: 140px;
-    margin-top: 80px;
-}
-.step1, .step2, .step3{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-.sub_Step1, .sub_Step2, .sub_Step3{
-    display: flex;
-    flex-direction: column;
-}
-.travel_Icon{
-    width: 50px;
-    height: 50px;
-    margin-right: 40px;
-}
-.h4_Step1, .h4_Step2, .h4_Step3{
-    color: #00A0B1;
-    font-size: 24px;
-    margin-bottom: 0;
-    font-family: 'Poppins';
-}
-.p_Step1, .p_Step2, .p_Step3{
-    color: #7A7A7A;
-    font-family: 'Poppins';
-    font-weight: 700;
-    font-size: 16px;
-    margin-top: 0;
-    margin-bottom: 30px;
-}
-.plane_Building{
-    width: 260px;
-    height: 280px;
-    border-bottom-right-radius: 20px;
-    margin-right: 10px;
-}
-.plane_Art{
-    width: 260px;
-    height: 280px;
-    border-top-right-radius: 20px;
-    margin-right: 10px;
-    margin-top: 30px;
-}
-.spec1{
-    width: 260px;
-    height: 280px;
-    border-top-left-radius: 20px;
-    margin-left: 10px;
-    margin-top: 30px;
-}
-.window_Sea{
-    width: 260px;
-    height: 280px;
-    border-bottom-left-radius: 20px;
-    margin-left: 10px;
-}
-.row1_Img{
-    display: flex;
-    flex-direction: row
-}
-.row2_Img{
-    display: flex;
-    flex-direction: row;
-}
-.column_Img{
-    display: flex;
-    flex-direction: column;
-    margin-top: 50px;
-}
-.late{
-    background-color: rgba(153, 235, 244, 0.3);
-    margin-bottom: 0;
-    padding-bottom: 60px;
-}
-.pres_Why{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-}
-.card_Why{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.box_1{
-    display: flex;
-    flex-direction: column;
-    padding-right: 20px;
-    margin-right: 40px;
-    align-items: center;
-}
-.box_2{
-    display: flex;
-    flex-direction: column;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-left: 40px;
-    margin-right: 20px;
-    align-items: center;
-}
-.box_3{
-    display: flex;
-    flex-direction: column;
-    padding-left: 20px;
-    margin-left: 20px;
-    align-items: center;
-}
-.row_Card{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-.h4_Why{
-    font-size: 48px;
-    font-family: 'Poppins';
-    letter-spacing: 2px;
-}
-.p_Why, .p_Why2{
-    font-size: 18px;
-    color: #7A7A7A;
-    font-family: 'Poppins';
-}
-.p_Box1, .p_Box2, .p_Box3{
-    font-family: 'Poppins';
-    font-size: 48px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-.p2_Box1, .p2_Box2, .p2_Box3{
-    font-family: 'Poppins';
-    font-size: 25px;
-    font-weight: bold;
-    letter-spacing: 1px;
 }
 .loading-container {
     display: flex;
@@ -334,422 +20,96 @@ hr{
 }
 .flightDetailsSection{
     width: 100%;
-    background: #010223;
+
     padding: 200px 0;
     display: flex;
     justify-content: center;
 }
+/*Why Pres section*/
+.track_Steps{
+    font-family: Montserrat, sans-serif;
+    padding-bottom: 100px;
 
 
-@media  (max-width: 1195px) {
-    .h2_article_flex{
-        font-size: 72px;
-    }
-    .h1_article_flex{
-        font-size: 22px;
-    }
-    .active_Flight{
-        width: 80px;
-    }
-    .h1_form{
-        font-size: 62px;
-        margin-left: 295px;
-    }
-    .flight_idnumber{
-        width: 215px;
-    }
-    .date_Flight{
-        width: 215px;
-    }
-    .landing_plane, .takeoff_plane, .tower_icon{
-        width: 60px;
-        height: 60px;
-    }
-    .Form_iata{
-        padding-bottom: 200px;
-    }
-    .h2_Steps{
-        font-size: 52px;
-    }
-    .step_Img{
-        width: 70%;
-       margin-left: 0px;
-       border-radius: 40px;
-    }
-    .text_Img{
-        display: flex;
-        flex-direction: column;
-        margin-top: 0;
-        align-items: center;
-    }
-    .text_Steps{
-        display: flex;
-        flex-direction: row;
-        margin-top: 70px;
-        margin-bottom: 70px;
-    }
-    .step1{
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-    .step2{
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-    .step3{
-        margin-right: 20px;
-        margin-left: 20px;
-    }
-    .p_Step1, .p_Step2, .p_Step3{
-        font-size: 15px;
-    }
-    .travel_Icon{
-        width: 50px;
-        height: 50px;
-    }
-    .text_Steps{
-        margin-bottom: 70px;
-    }
-    .h4_Why{
-        font-size: 52px;
-    }
-    .p_Why, .p_Why2{
-        font-size: 16px;
-    }
-    .plane_Art{
-        height: 240px;
-        width: 220px;
-        margin-left: 10px;
-        margin-top: 15px;
-
-    }
-    .plane_Building{
-        width: 220px;
-        height: 240px;
-        margin-left: 10px;
-        margin-bottom: 0;
-
-    }
-    .spec1{
-        width: 220px;
-        height: 240px;
-        margin-top: 15px;
-        margin-left: 5px;
-
-    }
-    .window_Sea{
-        height: 240px;
-        width: 220px;
-        margin-left: 5px;
-
-    }
-    .card_Why{
-        margin-left: 40px;
-    }
-    .p_Box1, .p_Box2, .p_Box3{
-        font-size: 38px
-    }
-    .p2_Box1, .p2_Box2, .p2_Box3{
-        font-size: 18px;
-    }
 
 }
+.title_Steps{
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+}
+.text_Steps{
+    padding-bottom: 10px;
+    width: 100%;
+    padding-top: 0;
 
-@media (max-width: 835px) {
-    .container_flex2{
-        margin-right: 20px;
-    }
-    .h2_article_flex{
-        font-size: 50px;
-    }
-    .h1_article_flex{
-        font-size: 30px;
-        margin-bottom: 0;
-        margin-left: 20px;
-    }
-    .Form_iata{
-        margin-top: 140px;
-    }
-    .active_Flight{
-        width: 80px;
-    }
+    background-image: url('src/assets/imgs/backgroundMap.webp');
 
-    .button1{
-        font-size: 16px;
-    }
-    .h1_form{
-        font-size: 50px;
-        margin-left: 180px;
-    }
-
-   .landing_plane, .takeoff_plane, .tower_icon{
-    height: 60px;
-    width: 60px;
-   }
-   .flight_idnumber{
-    max-width: 206px;
-   }
-   .button_submit{
-    margin-left: 60px;
-   }
-   .date_Flight{
-    width: 206px;
-   }
-   .text_Steps{
+}
+.stepsContainer{
+    display: flex;
+    flex-direction: column;
+}
+.travel_Icon{
+    width: 40px;
+    max-height: 40px;
+}
+.step1, .step2, .step3{
     display: flex;
     flex-direction: row;
-
-
-
-   }
-   .text_Img{
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    margin-top: 20px;
-   }
-   .p_Step1, .p_Step2, .p_Step3{
-    font-size: 14px;
-   }
-   .h4_Step1, .h4_Step2, .h4_Step3{
-    font-size: 22px;
-   }
-   .travel_Icon{
-    height: 40px;
-    width: 40px;
-   }
-   .step1{
-    flex-direction: column;
-    margin-left: 10px;
-   }
-   .step2{
-    flex-direction: column;
-    margin-left: 10px;
-    margin-right: 10px;
-   }
-   .step3{
-    flex-direction: column;
-   }
-   .step_Img{
-    margin-top: 20px;
-    width: 95%;
-    margin-left: 0px;
-    align-self: center;
-   }
-   .pres_Why{
-    display: flex;
-    flex-direction: column-reverse;
-   }
-   .h4_Why{
-    font-size: 38px;
-   }
-   .p_Why, .p_Why2{
-    font-size: 15px;
-    margin-left: 10px;
-    margin-right: 10px;
-   }
-   .p_Box1, .p_Box2, .p_Box3{
-    font-size: 38px;
-   }
-   .p2_Box1, .p2_Box2, .p2_Box3{
-    font-size: 22px;
-   }
-   .plane_Art{
-    height: 250px;
-    width: 230px;
-    margin-top: 20px;
-   }
-   .plane_Building{
-    height: 250px;
-    width: 230px;
-   }
-   .spec1{
-    height: 250px;
-    width: 230px;
-    margin-top: 20px;
-   }
-   .window_Sea{
-    height: 250px;
-    width: 230px;
-   }
-
-
+    justify-content: space-around
 }
-
-@media (max-width: 480px) {
-    .h2_article_flex{
-        font-size: 42px;
-    }
-    .h1_article_flex{
-        font-size: 20px;
-
-    }
-    .p_article_flex{
-        font-size: 13px;
-        margin-left: 20px;
-        margin-right: 10px;
-    }
-    .active_Flight{
-       width: 60px;
-    }
-    .container_flex2{
-        margin-top: 5px;
-    }
-    .h1_form{
-        font-size: 40px;
-        margin-left: 10px;
-    }
-    .flight_idnumber{
-        padding-left: 0px;
-        margin-left: 0px;
-        max-width: 189px;
-        height: 20px;
+.sub_Step1, .sub_Step2, .sub_Step3{
+    max-width: 70%;
 }
-    .form_track{
-        display: flex;
-        flex-direction: column;
-        align-items: first baseline;
-        margin: 0 5px 0 5px;
-    }
-    .date_Flight{
-        width: 209px;
-        margin-left: 0;
-
-    }
-    .Form_iata{
-        padding-bottom: 150px;
-    }
-    .h3_cards{
-        font-size: 38px;
-        margin-right: 8px;
-    }
-    .card_Flightinfos{
-        font-size: 16px;
-    }
-    .terminals_design, .gates_design{
-        margin-left: 0;
-    }
-    .bottom_arrow_icon {
-        width: 30px;
-        height: 30px;
-    }
-    .landing_plane, .takeoff_plane, .tower_icon{
-        height: 50px;
-        width: 50px;
-    }
-    .h2_Steps{
-        letter-spacing: 1px;
-        margin-left: 60px;
-        font-size: 43px;
-    }
-    .step_Img{
-        width: 95%;
-        /*height: 250px;*/
-        margin-left: 15px;
-    }
-    .text_Img{
-        display: flex;
-        flex-direction: column;
-        margin-top: 0px;
-        margin-right: 15px;
-        padding-bottom: 80px;
-    }
-    .step1{
-        flex-direction: row;
-       }
-       .step2{
-        flex-direction: row;
-       }
-       .step3{
-        flex-direction: row;
-       }
-    .text_Steps{
-        display: flex;
-        flex-direction: column;
-    }
-    .travel_Icon{
-        width: 40px;
-        height: 40px;
-        margin-left: 20px;
-        margin-right: 30px;
-    }
-    .p_Step1, .p_Step2, .p_Step3{
-        font-size: 14px;
-    }
-    .h4_Step1, .h4_Step2, .h4_Step3{
-        font-size: 24px;
-    }
-
-    .h4_Why{
-        font-size: 38px;
-    }
-    .pres_Why{
-        display: flex;
-        flex-direction: column-reverse;
-
-    }
-    .box_1{
-    margin-right: 0px;
-    padding-right: 10px;
-    margin-left: 20px;
-}
-    .box_2{
-    margin-right: 0px;
-    margin-left: 0px;
-    padding-right: 10px;
-    padding-left: 10px;
-}
-    .box_3{
-    margin-left: 0px;
-    padding-left: 0px;
-}
-.p_Box1, .p_Box2, .p_Box3{
-    font-size: 38px;
-}
-.p2_Box1, .p2_Box2, .p2_Box3{
+.h4_Step1, .h4_Step2, .h4_Step3{
+    color: #313EF7;
     font-size: 21px;
 }
-.p_Why{
-    font-size: 14px;
-    padding-left: 10px;
-    padding-right: 5px;
+.step_Img{
+    width: 95%;
+    border-radius: 40px;
+    align-self: center;
 }
-.p_Why2{
-    font-size: 14px;
-    padding-left: 10px;
-    padding-right: 5px;
-}
-.plane_Building{
-    height: 200px;
+.late img{
     width: 180px;
-    margin-right: 5px;
 }
-.plane_Art{
-    height: 200px;
-    width: 180px;
-    margin-top: 15px;
-    margin-right: 5px;
-
+@media screen and (min-width: 768px) {
+    .step1, .step2, .step3 {
+        flex-direction: column;
+    }
+    .text_Steps{
+        display: flex;
+        flex-direction: row;
+    }
+    .text_Steps{
+        padding-top: 50px;
+    }
 }
-.window_Sea{
-    height: 200px;
-    width: 180px;
-    margin-left: 5px;
-
-}
-.spec1{
-    height: 200px;
-    width: 180px;
-    margin-top: 15px;
-    margin-left: 5px;
-}
-.entire_section{
-    padding: 30px 18px 30px 18px;
-    margin: 0px 2px 0px 2px;
-}
-.entiresection_wrap{
-    width: 98%;
-}
-
-
+@media screen and (min-width: 1160px) {
+    .step_Img{
+        width: 75%;
+        margin-right: 20px;
+    }
+    .stepsContainer{
+        display: flex;
+        flex-direction: row;
+        padding-top: 50px;
+    }
+    .text_Steps{
+        flex-direction: column;
+        width: 75%;
+    }
+    .step1, .step2, .step3 {
+        flex-direction: row;
+    }
+    .travel_Icon{
+        width: 50px;
+        max-height: 50px;
+    }
+    .title_Steps{
+        font-size: 42px;
+    }
 }

@@ -13,6 +13,7 @@ import FormTracking from "./FormTracking/FormTracking.jsx";
 import Loading from "./Loading/Loading.jsx";
 import FlightError from "./FlightError/FlightError.jsx";
 import aircraftLoading from "../assets/imgs/aircraftLoading.gif";
+import backgroundMap from "../assets/imgs/backgroundMap.webp";
 
 
 const Main = () => {
@@ -88,22 +89,21 @@ const Main = () => {
 
 
             <section id="track_Steps" className="track_Steps">
-                <div className="">
-                    <h2 className="h2_Steps">
+
+                    <h2 className="title_Steps">
                         Track Your next Flight<br></br>
                         in 3 easy steps
                     </h2>
-                </div>
-                <div className="text_Img">
+
+                <div className="stepsContainer">
                     <div className="text_Steps">
                         <div className="step1">
                             <img className="travel_Icon" alt="" src={ticket_flight} />
                             <div className="sub_Step1">
                                 <h4 className="h4_Step1">Enter Your Flight Number</h4>
                                 <p className="p_Step1">
-                                    Start by entering your flight number in the search bar.{" "}
-                                    <br></br>
-                                    This unique identifier ensures that you track the<br></br>
+                                    Start by entering your flight number in the search bar.
+                                    This unique identifier ensures that you track the
                                     exact flight you're interested in.
                                 </p>
                             </div>
@@ -115,9 +115,7 @@ const Main = () => {
                                 <h4 className="h4_Step2">Check Your Flight Details</h4>
                                 <p className="p_Step2">
                                     Get access to real-time information, including departure
-                                    <br></br>
                                     and arrival times, ate numbers, and possible delays. Stay
-                                    <br></br>
                                     informed and updated with all the critical details.
                                 </p>
                             </div>
@@ -131,9 +129,7 @@ const Main = () => {
                                 </h4>
                                 <p className="p_Step3">
                                     Follow your flight’s progress with up-to-date information
-                                    <br></br>
                                     about its schedule and any changes along the way. Never
-                                    <br></br>
                                     miss a beat with instant notifications on your flight's
                                     status.
                                 </p>
