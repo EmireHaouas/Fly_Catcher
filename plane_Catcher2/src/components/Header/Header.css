@@ -29,7 +29,7 @@
             rgba(18, 20, 78, 0.9) 0%,
             #010223 100%
     ),
-    url("src/assets/imgs/Map.webp");
+    url("../../assets/imgs/Map.webp");
     display: flex;
     justify-content: center;
     padding-top: 100px;

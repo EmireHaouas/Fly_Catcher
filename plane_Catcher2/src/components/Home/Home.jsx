@@ -1,25 +1,25 @@
 import { useState, useEffect } from "react";
-import "../Main.css";
-import BoardingPassUI from "./BoardingPassUI/BoardingPassUI.jsx";
-import step_img from "../assets/imgs/step_img.jpg";
-import spec1 from "../assets/imgs/spec1.jpg";
-import window_sea from "../assets/imgs/window_sea.jpg";
-import plane_art from "../assets/imgs/plane_art.jpg";
-import plane_building from "../assets/imgs/plane_building.jpg";
-import departure_infos from "../assets/imgs/departure_infos.png";
-import ticket_flight from "../assets/imgs/ticket_flight.png";
-import stay_updated from "../assets/imgs/stay_updated.png";
-import FormTracking from "./FormTracking/FormTracking.jsx";
-import Loading from "./Loading/Loading.jsx";
-import FlightError from "./FlightError/FlightError.jsx";
-import aircraftLoading from "../assets/imgs/aircraftLoading.gif";
-import cityMemory1 from "../assets/imgs/citymemory1.webp";
-import cityMemory2 from "../assets/imgs/citymemory2.webp";
-import cityMemory3 from "../assets/imgs/citymemory3.webp";
-import cityMemory4 from "../assets/imgs/citymemory4.webp";
-import airDeliveryIcon from "../assets/imgs/AirDeliveryIcon.webp";
+import "./Home.css";
+import BoardingPassUI from "../BoardingPassUI/BoardingPassUI.jsx";
+import step_img from "../../assets/imgs/step_img.jpg";
+import spec1 from "../../assets/imgs/spec1.jpg";
+import window_sea from "../../assets/imgs/window_sea.jpg";
+import plane_art from "../../assets/imgs/plane_art.jpg";
+import plane_building from "../../assets/imgs/plane_building.jpg";
+import departure_infos from "../../assets/imgs/departure_infos.png";
+import ticket_flight from "../../assets/imgs/ticket_flight.png";
+import stay_updated from "../../assets/imgs/stay_updated.png";
+import FormTracking from "../FormTracking/FormTracking.jsx";
+import Loading from "../Loading/Loading.jsx";
+import FlightError from "../FlightError/FlightError.jsx";
+import aircraftLoading from "../../assets/imgs/aircraftLoading.gif";
+import cityMemory1 from "../../assets/imgs/citymemory1.webp";
+import cityMemory2 from "../../assets/imgs/citymemory2.webp";
+import cityMemory3 from "../../assets/imgs/citymemory3.webp";
+import cityMemory4 from "../../assets/imgs/citymemory4.webp";
+import airDeliveryIcon from "../../assets/imgs/AirDeliveryIcon.webp";
 
-const Main = () => {
+const Home = () => {
     const apiKey = "f1e5e935d3d39352f9cbcfcd1f46a963";
     const [flightId, setFlightId] = useState("");
     const [date, setDate] = useState("");
@@ -227,4 +227,4 @@ const Main = () => {
     );
 };
 
-export default Main;
+export default Home;

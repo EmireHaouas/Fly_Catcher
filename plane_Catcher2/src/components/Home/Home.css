@@ -70,7 +70,7 @@ body {
     padding-bottom: 10px;
     width: 100%;
     padding-top: 0;
-    background-image: url("src/assets/imgs/backgroundMap.webp");
+    background-image: url("../../assets/imgs/backgroundMap.webp");
 }
 .stepsContainer {
     display: flex;

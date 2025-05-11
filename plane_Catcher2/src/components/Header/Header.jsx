@@ -1,5 +1,5 @@
-import "../Header.css";
-import aircraftBackground from "../assets/imgs/aircraft3d.webp";
+import "./Header.css";
+import aircraftBackground from "../../assets/imgs/aircraft3d.webp";
 
 const Header = () => {
     return (

@@ -1,12 +1,12 @@
-import Header from "./components/Header.jsx";
-import Main from "./components/Main";
-import Footer from "./components/Footer";
+import Header from "./components/Header/Header.jsx";
+import Home from "./components/Home/Home.jsx";
+import Footer from "./components/Footer/Footer.jsx";
 
 const App = () => {
     return (
         <>
             <Header />
-            <Main />
+            <Home />
             <Footer />
         </>
     );
