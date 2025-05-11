@@ -1,11 +1,11 @@
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
 }
-.main{
+.main {
     margin: 0;
     padding: 0;
-
 }
 .loading-container {
     display: flex;
@@ -18,97 +18,129 @@ html, body {
     width: 100px;
     height: auto;
 }
-.flightDetailsSection{
-    width: 100%;
 
-    padding: 200px 0;
+.flightDetailsSection {
+    width: 100%;
+    background: #010223;
+    padding: 50px 0 200px 0;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.flightInfoIntro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
 }
+.titleFtInfoIntro {
+    color: #fff;
+    font-family: Montserrat, sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    text-transform: capitalize;
+}
+.pFtInfoIntro {
+    color: rgba(255, 255, 255, 0.65);
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+.FtIntroImg {
+    display: none;
+}
 /*Why Pres section*/
-.track_Steps{
+.track_Steps {
     font-family: Montserrat, sans-serif;
     padding-bottom: 100px;
-
-
-
 }
-.title_Steps{
+.title_Steps {
     text-align: center;
     font-family: Montserrat, sans-serif;
     font-weight: 700;
     font-size: 32px;
+    color: #011736;
 }
-.text_Steps{
+.text_Steps {
     padding-bottom: 10px;
     width: 100%;
     padding-top: 0;
-    background-image: url('src/assets/imgs/backgroundMap.webp');
-
+    background-image: url("src/assets/imgs/backgroundMap.webp");
 }
-.stepsContainer{
+.stepsContainer {
     display: flex;
     flex-direction: column;
 }
-.travel_Icon{
+.travel_Icon {
     width: 40px;
     max-height: 40px;
 }
-.step1, .step2, .step3{
+.step1,
+.step2,
+.step3 {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around
+    justify-content: space-around;
 }
-.sub_Step1, .sub_Step2, .sub_Step3{
+.sub_Step1,
+.sub_Step2,
+.sub_Step3 {
     max-width: 70%;
 }
-.h4_Step1, .h4_Step2, .h4_Step3{
-    color: #313EF7;
+.h4_Step1,
+.h4_Step2,
+.h4_Step3 {
+    color: #313ef7;
     font-size: 21px;
 }
-.step_Img{
+.step_Img {
     width: 95%;
     border-radius: 40px;
     align-self: center;
 }
 /*whyUsSection*/
-.whyUsSection{
+.whyUsSection {
     background: rgba(49, 62, 247, 0.05);
 }
 
-.benefitsSection{
+.benefitsSection {
     display: flex;
     flex-direction: column-reverse;
     padding-bottom: 50px;
 }
-.statsSection{
-     display: flex;
-     flex-direction: row;
-     justify-content: space-around;
-     text-align: center;
- }
-.upperRow_Img, .lowerRow_Img{
+.statsSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+}
+.upperRow_Img,
+.lowerRow_Img {
     display: flex;
     flex-direction: row;
     justify-content: center;
-
 }
-.plane_Building{
+.plane_Building {
     border-bottom-right-radius: 20px;
     width: 45%;
     margin-right: 5px;
     max-width: 180px;
     max-height: 200px;
 }
-.window_Sea{
+.window_Sea {
     border-bottom-left-radius: 20px;
     width: 45%;
     max-width: 180px;
     margin-left: 5px;
     max-height: 200px;
 }
-.plane_Art{
+.plane_Art {
     border-top-right-radius: 20px;
     width: 45%;
     margin-right: 5px;
@@ -116,7 +148,7 @@ html, body {
     max-width: 180px;
     max-height: 200px;
 }
-.spec1{
+.spec1 {
     border-top-left-radius: 20px;
     width: 45%;
     margin-left: 5px;
@@ -124,57 +156,103 @@ html, body {
     max-width: 180px;
     max-height: 200px;
 }
-.p_Box1, .p_Box2, .p_Box3{
-   font-size: 38px;
+.p_Box1,
+.p_Box2,
+.p_Box3 {
+    font-size: 38px;
     font-family: Poppins, sans-serif;
 }
-.p2_Box1, .p2_Box2, .p2_Box3{
+.p2_Box1,
+.p2_Box2,
+.p2_Box3 {
     font-size: 25px;
     letter-spacing: 1px;
     font-family: Inter, sans-serif;
     font-weight: 300;
 }
-.titleWhyUsSection{
+.titleWhyUsSection {
     font-family: Poppins, sans-serif;
     font-size: 38px;
     text-align: center;
 }
-.p_Why, .p_Why2{
+.p_Why,
+.p_Why2 {
     font-family: Inter, sans-serif;
     font-weight: 300;
     letter-spacing: 1px;
     text-align: center;
 }
+.cityImagesRow {
+    flex-wrap: wrap;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.cityImg1 {
+    width: 170px;
+    max-height: 246px;
+}
+.cityImg2 {
+    width: 170px;
+    margin-bottom: 25px;
+    max-height: 246px;
+}
+.cityImg3 {
+    width: 170px;
+    max-height: 246px;
+}
+.cityImg4 {
+    width: 170px;
+    margin-top: 25px;
+    max-height: 246px;
+}
+.titleAdvertisingSection {
+    text-align: center;
+    font-size: 32px;
+    color: #011736;
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+}
+.advertisingSection {
+    padding-bottom: 100px;
+}
 
 @media screen and (min-width: 768px) {
-    .step1, .step2, .step3 {
+    .step1,
+    .step2,
+    .step3 {
         flex-direction: column;
     }
-    .text_Steps{
+    .text_Steps {
         display: flex;
         flex-direction: row;
     }
-    .text_Steps{
+    .text_Steps {
         padding-top: 50px;
     }
     /*whyUsSection*/
-    .plane_Building{
+    .plane_Building {
         max-width: 230px;
         max-height: 250px;
         margin-right: 10px;
     }
-    .window_Sea{
+    .window_Sea {
         max-width: 230px;
         max-height: 250px;
         margin-left: 5px;
     }
-    .plane_Art{
+    .plane_Art {
         margin-top: 20px;
         max-width: 230px;
         max-height: 250px;
         margin-right: 10px;
     }
-    .spec1{
+    .spec1 {
         margin-top: 20px;
         max-width: 230px;
         max-height: 250px;
@@ -182,42 +260,127 @@ html, body {
     }
 }
 @media screen and (min-width: 1160px) {
-    .step_Img{
+    .step_Img {
         width: 75%;
         margin-right: 20px;
     }
-    .stepsContainer{
+    .stepsContainer {
         display: flex;
         flex-direction: row;
         padding-top: 50px;
     }
-    .text_Steps{
+    .text_Steps {
         flex-direction: column;
         width: 75%;
     }
-    .step1, .step2, .step3 {
+    .step1,
+    .step2,
+    .step3 {
         flex-direction: row;
     }
-    .travel_Icon{
+    .travel_Icon {
         width: 50px;
         max-height: 50px;
     }
-    .title_Steps{
+    .title_Steps {
         font-size: 42px;
     }
     /*whyUsSection*/
-    .benefitsSection{
+    .benefitsSection {
         flex-direction: row;
-       justify-content: space-evenly;
+        justify-content: space-evenly;
     }
-    .card_Why{
+    .card_Why {
         width: 45%;
     }
-    .column_Img{
+    .column_Img {
         width: 45%;
         align-self: flex-end;
     }
-    .p_Why, .p_Why2{
+    .p_Why,
+    .p_Why2 {
         text-align: initial;
+    }
+    /*advertisingSection*/
+    .advertisingSection {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .titleAdvertisingSection {
+        color: #011736;
+        text-align: center;
+        font-family: Montserrat, sans-serif;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%;
+        text-transform: capitalize;
+    }
+    .cityImg1 {
+        width: 262px;
+        height: 390px;
+        max-height: 390px;
+    }
+    .cityImg2 {
+        width: 262px;
+        height: 390px;
+        max-height: 390px;
+        margin-top: 50px;
+    }
+    .cityImg3 {
+        width: 262px;
+        height: 390px;
+        max-height: 390px;
+    }
+    .cityImg4 {
+        width: 262px;
+        height: 390px;
+        max-height: 390px;
+        margin-top: 50px;
+    }
+    .cityImagesRow {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .flightDetailsSection {
+        width: 100%;
+        background: #010223;
+        padding: 50px 0 200px 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .titleFtInfoIntro {
+        color: #fff;
+        font-family: Montserrat, sans-serif;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%;
+        text-transform: capitalize;
+    }
+    .pFtInfoIntro {
+        color: rgba(255, 255, 255, 0.65);
+        font-family: Montserrat, sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+    }
+    .flightDetailsSection {
+        width: 100%;
+        background: #010223;
+        padding: 50px 0 200px 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .FtIntroImg {
+        display: inline-block;
+        position: absolute;
+        top: 1275px;
+        left: 212px;
+        width: 250px;
     }
 }

@@ -1,107 +1,107 @@
-.logo{
+.logo {
     width: 150px;
     height: 150px;
 }
-.h1_footer{
+.h1_footer {
     margin: 0;
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
 }
-.footer{
-    background: #010223;
-    background-image: url('src/assets/imgs/footerBackgroundMap.webp');
-    background-size: cover;       /* couvre toute la section */
-    background-position: center;  /* centre l'image */
-    background-repeat: no-repeat;
-
+.footer {
+    background: #010223 url("src/assets/imgs/footerBackgroundMap.webp")
+    center/cover no-repeat;
 }
-.whatsapp_Logo, .facebook_Logo, .twitter_Logo, .instagram_Logo{
+
+.whatsapp_Logo,
+.facebook_Logo,
+.twitter_Logo,
+.instagram_Logo {
     width: 30px;
-
 }
-.a_Whatsapp{
+.a_Whatsapp {
     text-decoration: none;
     margin-left: 20px;
     padding-left: 5px;
     padding-right: 5px;
 }
-.a_Instagram{
+.a_Instagram {
     text-decoration: none;
     margin-left: 20px;
     padding-left: 5px;
     padding-right: 5px;
 }
-.a_Facebook{
+.a_Facebook {
     text-decoration: none;
     margin-left: 20px;
     padding-left: 5px;
     padding-right: 5px;
 }
-.a_Twitter{
+.a_Twitter {
     text-decoration: none;
     margin-left: 20px;
     padding-left: 5px;
     padding-right: 5px;
 }
-.social_Network{
+.social_Network {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
 }
-.credit{
+.credit {
     font-size: 16px;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 700;
     align-self: flex-end;
     letter-spacing: 1px;
 }
-.dede{
+.dede {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
     padding-top: 30px;
 }
-.logo{
+.logo {
     margin-bottom: 20px;
 }
 
 @media (max-width: 1195px) {
-    .logo{
+    .logo {
         height: 100px;
         width: 100px;
     }
-
 }
 
 @media (max-width: 835px) {
-    .logo{
+    .logo {
         height: 100px;
         width: 100px;
     }
 }
 
 @media (max-width: 480px) {
-    .whatsapp_Logo, .facebook_Logo, .instagram_Logo, .twitter_Logo{
+    .whatsapp_Logo,
+    .facebook_Logo,
+    .instagram_Logo,
+    .twitter_Logo {
         width: 15px;
         height: 15px;
     }
-    .logo{
+    .logo {
         width: 40px;
         height: 40px;
         border-radius: 5px;
     }
-    .credit{
+    .credit {
         font-size: 8px;
     }
-    .a_Facebook{
+    .a_Facebook {
         margin-left: 10px;
     }
-    .a_Instagram{
+    .a_Instagram {
         margin-left: 10px;
     }
-    .a_Twitter{
+    .a_Twitter {
         margin-left: 10px;
     }
-
 }

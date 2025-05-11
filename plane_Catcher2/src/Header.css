@@ -1,4 +1,4 @@
-.navBar{
+.navBar {
     background-color: #010223;
     display: flex;
     flex-direction: row;
@@ -7,25 +7,29 @@
     gap: 10%;
     align-items: center;
 }
-.navTrack{
-    border: 1px solid #FFF;
+.navTrack {
+    border: 1px solid #fff;
     border-radius: 59px;
     padding: 1% 2%;
-
 }
-.navBar a:active{
-    color: #313EF7;
-    border-bottom: 2px solid #313EF7;
+.navBar a:active {
+    color: #313ef7;
+    border-bottom: 2px solid #313ef7;
 }
-.navBar a{
+.navBar a {
     text-decoration: none;
-    font-family: Poppins,sans-serif;
+    font-family: Poppins, sans-serif;
     font-weight: 600;
     font-size: 14px;
-    color : #FFFFFF;
+    color: #ffffff;
 }
-.bannerHeader{
-    background: radial-gradient(50% 50% at 50% 50%, rgba(18, 20, 78, 0.90) 0%, #010223 100%), url('src/assets/imgs/Map.webp');
+.bannerHeader {
+    background: radial-gradient(
+            50% 50% at 50% 50%,
+            rgba(18, 20, 78, 0.9) 0%,
+            #010223 100%
+    ),
+    url("src/assets/imgs/Map.webp");
     display: flex;
     justify-content: center;
     padding-top: 100px;
@@ -33,18 +37,17 @@
     flex-direction: column;
     align-items: center;
 }
-.titleHeader{
+.titleHeader {
     text-align: center;
-    color: #FFFFFF;
+    color: #ffffff;
     font-family: Montserrat, sans-serif;
     font-weight: 700;
     font-size: 25px;
     margin-bottom: 10px;
-
 }
-.subtitleHeader{
+.subtitleHeader {
     text-align: center;
-    color: rgba(255, 255, 255, 0.70);
+    color: rgba(255, 255, 255, 0.7);
     font-family: Inter, sans-serif;
     font-size: 12px;
     font-style: normal;
@@ -58,21 +61,21 @@
     height: auto;
 }
 @media screen and (min-width: 768px) {
-    .titleHeader{
+    .titleHeader {
         font-size: 28px;
     }
-    .subtitleHeader{
+    .subtitleHeader {
         font-size: 14px;
     }
-    .navBar a{
+    .navBar a {
         font-size: 15px;
     }
 }
 @media screen and (min-width: 1160px) {
-    .titleHeader{
+    .titleHeader {
         font-size: 48px;
     }
-    .subtitleHeader{
+    .subtitleHeader {
         font-size: 14px;
     }
 }

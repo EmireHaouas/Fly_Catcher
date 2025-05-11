@@ -1,7 +1,11 @@
-import React from "react";
 import "./BoardingPassUI.css";
+import PropTypes from "prop-types";
 
-const BoardingPassUI = ({ flightData }) => {
+const BoardingPassUI = ({
+                            flightData,
+                            isGeekInfosVisible,
+                            toggleGeekInfosVisibility,
+                        }) => {
     if (!flightData) return null;
 
     const formatTime = (timestamp) => {
@@ -59,13 +63,74 @@ const BoardingPassUI = ({ flightData }) => {
                         {flightData.departure.terminal || "N/A"}
                     </div>
                 </div>
+                <span className="geek-chip" onClick={toggleGeekInfosVisibility}>
+          {isGeekInfosVisible ? "Hide Geek Mode" : "Enable Geek Mode ✈"}
+        </span>
             </div>
+
+            {isGeekInfosVisible && (
+                <div className="geek-card">
+                    <h3 className="geek-title">✈ Geek Flight Info</h3>
+                    <ul>
+                        <li>
+                            <strong>Aircraft:</strong> {flightData.aircraft?.icao || "N/A"}
+                        </li>
+                        <li>
+                            <strong>Tail Number:</strong>{" "}
+                            {flightData.aircraft?.registration || "N/A"}
+                        </li>
+                        <li>
+                            <strong>Flight Status:</strong>{" "}
+                            {flightData.flight_status || "N/A"}
+                        </li>
+                        <li>
+                            <strong>Departure Delay:</strong>{" "}
+                            {flightData.departure?.delay || 0} min
+                        </li>
+                        <li>
+                            <strong>Airline Code:</strong> {flightData.airline?.iata || "N/A"}
+                        </li>
+                    </ul>
+                </div>
+            )}
 
             <div className="ticket-footer">
                 <div className="barcode"></div>
             </div>
         </div>
     );
+};
+BoardingPassUI.propTypes = {
+    flightData: PropTypes.shape({
+        flight: PropTypes.shape({
+            iata: PropTypes.string,
+            number: PropTypes.string,
+        }),
+        departure: PropTypes.shape({
+            iata: PropTypes.string,
+            airport: PropTypes.string,
+            estimated: PropTypes.string,
+            gate: PropTypes.string,
+            terminal: PropTypes.string,
+            delay: PropTypes.number,
+        }),
+        arrival: PropTypes.shape({
+            iata: PropTypes.string,
+            airport: PropTypes.string,
+            estimated: PropTypes.string,
+        }),
+        aircraft: PropTypes.shape({
+            icao: PropTypes.string,
+            registration: PropTypes.string,
+        }),
+        airline: PropTypes.shape({
+            name: PropTypes.string,
+            iata: PropTypes.string,
+        }),
+        flight_status: PropTypes.string,
+    }),
+    isGeekInfosVisible: PropTypes.bool.isRequired,
+    toggleGeekInfosVisibility: PropTypes.func.isRequired,
 };
 
 export default BoardingPassUI;

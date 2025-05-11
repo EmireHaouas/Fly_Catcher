@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import "../Main.css";
 import BoardingPassUI from "./BoardingPassUI/BoardingPassUI.jsx";
 import step_img from "../assets/imgs/step_img.jpg";
@@ -13,11 +13,14 @@ import FormTracking from "./FormTracking/FormTracking.jsx";
 import Loading from "./Loading/Loading.jsx";
 import FlightError from "./FlightError/FlightError.jsx";
 import aircraftLoading from "../assets/imgs/aircraftLoading.gif";
-import backgroundMap from "../assets/imgs/backgroundMap.webp";
-
+import cityMemory1 from "../assets/imgs/citymemory1.webp";
+import cityMemory2 from "../assets/imgs/citymemory2.webp";
+import cityMemory3 from "../assets/imgs/citymemory3.webp";
+import cityMemory4 from "../assets/imgs/citymemory4.webp";
+import airDeliveryIcon from "../assets/imgs/AirDeliveryIcon.webp";
 
 const Main = () => {
-    const apiKey = 'f1e5e935d3d39352f9cbcfcd1f46a963'
+    const apiKey = "f1e5e935d3d39352f9cbcfcd1f46a963";
     const [flightId, setFlightId] = useState("");
     const [date, setDate] = useState("");
     const [flightData, setFlightData] = useState(null);
@@ -29,7 +32,6 @@ const Main = () => {
         const img = new Image();
         img.src = aircraftLoading;
     }, []);
-
 
     const handleSubmit = async (event) => {
         event.preventDefault();
@@ -63,16 +65,12 @@ const Main = () => {
         }
     };
 
-
-
     const toggleGeekInfosVisibility = () => {
         setIsGeekInfosVisible(!isGeekInfosVisible);
     };
 
     return (
         <main className="main">
-
-
             <FormTracking
                 flightId={flightId}
                 setFlightId={setFlightId}
@@ -80,20 +78,58 @@ const Main = () => {
                 setDate={setDate}
                 handleSubmit={handleSubmit}
             />
-            <div className='flightDetailsSection'>
-                {loading && <Loading />}
-                {error && <FlightError error={error} />}
-                {flightData && <BoardingPassUI flightData={flightData} />}
-            </div>
 
+            {!loading && (error || flightData) && (
+                <div className="flightDetailsSection">
+                    {error && <FlightError error={error} />}
 
+                    {flightData && (
+                        <>
+                            <div className="flightInfoIntro">
+                                <h2 className="titleFtInfoIntro">
+                                    Your Boarding Pass to Real-Time
+                                    <br />
+                                    Flight Info
+                                </h2>
+                                <p className="pFtInfoIntro">
+                                    Enter your flight number and get immediate access to its live
+                                    status, departure gate,
+                                    <br />
+                                    and arrival time all in one glance.
+                                </p>
+                                <img
+                                    className="FtIntroImg"
+                                    src={airDeliveryIcon}
+                                    alt="airDeliveryIcon"
+                                />
+                            </div>
+                            <BoardingPassUI
+                                flightData={flightData}
+                                isGeekInfosVisible={isGeekInfosVisible}
+                                toggleGeekInfosVisibility={toggleGeekInfosVisibility}
+                            />
+                        </>
+                    )}
+                </div>
+            )}
+
+            {loading && <Loading />}
+
+            <section className="advertisingSection">
+                <h2 className="titleAdvertisingSection">Make memories with us</h2>
+                <div className="cityImagesRow">
+                    <img className="cityImg1" src={cityMemory1} alt="cityMemory1" />
+                    <img className="cityImg2" src={cityMemory2} alt="cityMemory2" />
+                    <img className="cityImg3" src={cityMemory3} alt="cityMemory3" />
+                    <img className="cityImg4" src={cityMemory4} alt="cityMemory4" />
+                </div>
+            </section>
 
             <section id="track_Steps" className="track_Steps">
-
-                    <h2 className="title_Steps">
-                        Track Your next Flight<br></br>
-                        in 3 easy steps
-                    </h2>
+                <h2 className="title_Steps">
+                    Track Your next Flight<br></br>
+                    in 3 easy steps
+                </h2>
 
                 <div className="stepsContainer">
                     <div className="text_Steps">
@@ -102,9 +138,9 @@ const Main = () => {
                             <div className="sub_Step1">
                                 <h4 className="h4_Step1">Enter Your Flight Number</h4>
                                 <p className="p_Step1">
-                                    Start by entering your flight number in the search bar.
-                                    This unique identifier ensures that you track the
-                                    exact flight you're interested in.
+                                    Start by entering your flight number in the search bar. This
+                                    unique identifier ensures that you track the exact flight
+                                    you&apos;re interested in.
                                 </p>
                             </div>
                         </div>
@@ -114,9 +150,9 @@ const Main = () => {
                             <div className="sub_Step2">
                                 <h4 className="h4_Step2">Check Your Flight Details</h4>
                                 <p className="p_Step2">
-                                    Get access to real-time information, including departure
-                                    and arrival times, ate numbers, and possible delays. Stay
-                                    informed and updated with all the critical details.
+                                    Get access to real-time information, including departure and
+                                    arrival times, ate numbers, and possible delays. Stay informed
+                                    and updated with all the critical details.
                                 </p>
                             </div>
                         </div>
@@ -125,13 +161,12 @@ const Main = () => {
                             <img className="travel_Icon" alt="" src={stay_updated} />
                             <div className="sub_Step3">
                                 <h4 className="h4_Step3">
-                                    Stay Updated on Your Flight's Status
+                                    Stay Updated on Your Flight&apos;s Status
                                 </h4>
                                 <p className="p_Step3">
                                     Follow your flight’s progress with up-to-date information
-                                    about its schedule and any changes along the way. Never
-                                    miss a beat with instant notifications on your flight's
-                                    status.
+                                    about its schedule and any changes along the way. Never miss a
+                                    beat with instant notifications on your flight&apos;s status.
                                 </p>
                             </div>
                         </div>
@@ -157,10 +192,10 @@ const Main = () => {
                         <p className="p_Why">
                             Track your flights effortlessly with our intuitive platform,
                             designed to deliver real-time updates and <br></br>
-                            comprehensive flight details at your fingertips. Whether you're
-                            monitoring arrivals, departures, or<br></br>
+                            comprehensive flight details at your fingertips. Whether
+                            you&apos;re monitoring arrivals, departures, or<br></br>
                             mid-flight progress, our service provides precise data, ensuring
-                            you're always informed.<br></br>
+                            you&apos;re always informed.<br></br>
                         </p>
                         <p className="p_Why2">
                             With user-friendly tools, seamless navigation, and instant access

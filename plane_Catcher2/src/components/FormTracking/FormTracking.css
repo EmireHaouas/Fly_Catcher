@@ -59,6 +59,17 @@ input[type="date"] {
     padding: 14px 16px;
     font-size: 15px;
 }
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    white-space: nowrap;
+}
 
 @media screen and (min-width: 768px) {
     .flightForm {

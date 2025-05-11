@@ -1,4 +1,3 @@
-import React from "react";
 import "../Header.css";
 import aircraftBackground from "../assets/imgs/aircraft3d.webp";
 

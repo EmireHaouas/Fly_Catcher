@@ -12,7 +12,6 @@
     margin: auto;
 }
 
-
 .loadingImg {
     width: 240px;
     height: auto;
@@ -22,7 +21,7 @@
 .loadingContainer p {
     text-align: center;
     color: rgba(255, 255, 255, 0.85);
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 14px;
     margin: 4px 0;
 }

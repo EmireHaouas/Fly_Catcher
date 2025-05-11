@@ -6,14 +6,14 @@ const FormTracking = ({flightId, setFlightId, date, setDate, handleSubmit }) => 
     return (
         <form className="flightForm" onSubmit={handleSubmit}>
             <div className="formGroup">
-                <label htmlFor="flightNumber">Flight Number</label>
+                <label className='visually-hidden' htmlFor="flightNumber">Flight Number</label>
                 <input type="text" id="flightNumber" value={flightId}
                        onChange={(e) => setFlightId(e.target.value)}
                        required placeholder="Flight number (e.g. QR806)"/>
             </div>
 
             <div className="formGroup">
-                <label htmlFor="flightDate">Date</label>
+                <label className='visually-hidden' htmlFor="flightDate">Date</label>
                 <input type="date" id="flightDate" value={date}
                        onChange={(e) => setDate(e.target.value)}
                        required/>
