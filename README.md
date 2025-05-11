@@ -10,7 +10,11 @@ API. It’s designed for clarity and responsiveness, giving users a clean and
 efficient way to track their flight’s progress and logistics.
 
 🔗 [Live Demo](https://emire-haouas.dev/plane_Catcher2/)
-![Preview](https://raw.githubusercontent.com/EmireHaouas/Fly_Catcher/refs/heads/main/plane_Catcher2/src/assets/imgs/preview.jpg)
+
+## ✈️ App Preview
+![Home Preview](https://raw.githubusercontent.com/EmireHaouas/Fly_Catcher/refs/heads/main/plane_Catcher2/src/assets/imgs/preview.jpg)
+![Flight Result Preview](https://raw.githubusercontent.com/EmireHaouas/Fly_Catcher/refs/heads/main/plane_Catcher2/src/assets/imgs/preview2.png)
+
 
 
 
