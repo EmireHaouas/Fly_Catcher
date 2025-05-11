@@ -1,9 +1,9 @@
 import "./Footer.css";
 import logo from "../../assets/imgs/logo.png";
-import whatsapp from "../../assets/imgs/whatsapp.png";
-import twitter from "../../assets/imgs/twitter.png";
-import instagram from "../../assets/imgs/instagram.png";
-import facebook from "../../assets/imgs/facebook.png";
+import whatsapp from "../../assets/imgs/whatsapp.webp";
+import twitter from "../../assets/imgs/twitter.webp";
+import instagram from "../../assets/imgs/instagram.webp";
+import facebook from "../../assets/imgs/facebook.webp";
 
 const Main = () => {
     return (

@@ -6,11 +6,11 @@ const Header = () => {
         <header className="Header">
             <nav className="navBar">
                 <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a className="navTrack" href="#services">
+                <a href="#track_Steps">About</a>
+                <a className="navTrack" href="#trackMyFlight">
                     Track My Flight
                 </a>
-                <a href="#contact">Why Us</a>
+                <a href="#why_Us">Why Us</a>
             </nav>
             <div className="bannerHeader">
                 <img

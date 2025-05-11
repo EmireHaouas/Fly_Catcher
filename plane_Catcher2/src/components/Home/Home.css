@@ -22,7 +22,7 @@ body {
 .flightDetailsSection {
     width: 100%;
     background: #010223;
-    padding: 50px 0 200px 0;
+    padding: 50px 0 100px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -258,6 +258,17 @@ body {
         max-height: 250px;
         margin-left: 5px;
     }
+    .FtIntroImg{
+        display: flex;
+        width: 100px;
+    }
+    .titleFtInfoIntro{
+        font-size: 32px;
+        text-align: center;
+    }
+    .pFtInfoIntro{
+        font-size: 16px;
+    }
 }
 @media screen and (min-width: 1160px) {
     .step_Img {
@@ -377,10 +388,8 @@ body {
         justify-content: space-around;
     }
     .FtIntroImg {
-        display: inline-block;
-        position: absolute;
-        top: 1275px;
-        left: 212px;
         width: 250px;
+        display: flex;
+
     }
 }

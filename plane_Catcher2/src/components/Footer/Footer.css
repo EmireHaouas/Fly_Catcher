@@ -1,6 +1,7 @@
 .logo {
     width: 150px;
     height: 150px;
+    border-radius: 20px;
 }
 .h1_footer {
     margin: 0;
@@ -53,6 +54,10 @@
     font-weight: 700;
     align-self: flex-end;
     letter-spacing: 1px;
+    color: #FFF;
+    font-style: normal;
+    line-height: 150%;
+    text-transform: capitalize;
 }
 .dede {
     display: flex;
@@ -69,6 +74,7 @@
     .logo {
         height: 100px;
         width: 100px;
+        border-radius: 20px;
     }
 }
 
@@ -94,6 +100,7 @@
     }
     .credit {
         font-size: 8px;
+
     }
     .a_Facebook {
         margin-left: 10px;
