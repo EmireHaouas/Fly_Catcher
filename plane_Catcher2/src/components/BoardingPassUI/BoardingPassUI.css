@@ -1,0 +1,156 @@
+.ticket {
+    width: 90%;
+    max-width: 520px;
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    position: relative;
+    font-family: Montserrat, sans-serif;
+}
+
+.ticket::before,
+.ticket::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #111;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+.ticket::before {
+    left: -10px;
+}
+.ticket::after {
+    right: -10px;
+}
+
+.ticket-header {
+    display: flex;
+    justify-content: space-between;
+    background: #f2f2f2;
+    padding: 12px 16px;
+    font-size: 14px;
+}
+
+.ticket-type {
+    background: #e0eaff;
+    padding: 2px 8px;
+    border-radius: 8px;
+    color: #3366cc;
+    font-weight: bold;
+}
+
+.route {
+    font-weight: bold;
+}
+
+.plane {
+    margin: 0 6px;
+}
+
+.ticket-body {
+    padding: 40px 16px 100px 16px;
+}
+
+.ticket-body h2 {
+    margin-bottom: 16px;
+    font-size: 16px;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 12px;
+    column-gap: 12px;
+    font-size: 14px;
+}
+
+.ticket-footer {
+    padding: 12px;
+    border-top: 1px dashed #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.geek-card {
+    background-color: #f9f9f9;
+    margin: 16px;
+    padding: 16px;
+    border-radius: 12px;
+    border: 1px dashed #ccc;
+    font-size: 13px;
+    font-family: "Courier New", monospace;
+    color: #333;
+}
+
+.geek-title {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #0056b3;
+}
+
+.geek-card ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.geek-card li {
+    margin-bottom: 6px;
+}
+.geek-chip {
+    display: inline-block;
+    padding: 6px 12px;
+    background-color: #e0eaff;
+    color: #3366cc;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 13px;
+    margin: 12px 16px 0 16px;
+    text-align: center;
+    transition: background 0.2s ease;
+}
+
+.geek-chip:hover {
+    background-color: #cce0ff;
+}
+
+.barcode {
+    width: 90%;
+    height: 40px;
+    background: repeating-linear-gradient(
+            to right,
+            #000,
+            #000 2px,
+            #fff 2px,
+            #fff 4px
+    );
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.ticket {
+    animation: fadeInUp 0.6s ease forwards;
+}
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 1160px) {
+    .ticket-body {
+        padding: 16px;
+    }
+}

@@ -1,0 +1,27 @@
+.errorContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(10, 10, 35, 0.85);
+    padding: 24px 32px;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    outline: 1px solid rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(4px);
+    width: 240px;
+    margin: auto;
+}
+
+.errorImg {
+    width: 240px;
+    height: auto;
+    margin-bottom: 16px;
+}
+
+.errorContainer p {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.85);
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    margin: 4px 0;
+}

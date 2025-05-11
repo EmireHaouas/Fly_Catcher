@@ -1,0 +1,114 @@
+.logo {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+}
+.h1_footer {
+    margin: 0;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.footer {
+    background: #010223 url("../../assets/imgs/footerBackgroundMap.webp")
+    center/cover no-repeat;
+}
+
+.whatsapp_Logo,
+.facebook_Logo,
+.twitter_Logo,
+.instagram_Logo {
+    width: 30px;
+}
+.a_Whatsapp {
+    text-decoration: none;
+    margin-left: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.a_Instagram {
+    text-decoration: none;
+    margin-left: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.a_Facebook {
+    text-decoration: none;
+    margin-left: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.a_Twitter {
+    text-decoration: none;
+    margin-left: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.social_Network {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.credit {
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    align-self: flex-end;
+    letter-spacing: 1px;
+    color: #FFF;
+    font-style: normal;
+    line-height: 150%;
+    text-transform: capitalize;
+}
+.dede {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 30px;
+}
+.logo {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 1195px) {
+    .logo {
+        height: 100px;
+        width: 100px;
+        border-radius: 20px;
+    }
+}
+
+@media (max-width: 835px) {
+    .logo {
+        height: 100px;
+        width: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .whatsapp_Logo,
+    .facebook_Logo,
+    .instagram_Logo,
+    .twitter_Logo {
+        width: 15px;
+        height: 15px;
+    }
+    .logo {
+        width: 40px;
+        height: 40px;
+        border-radius: 5px;
+    }
+    .credit {
+        font-size: 8px;
+
+    }
+    .a_Facebook {
+        margin-left: 10px;
+    }
+    .a_Instagram {
+        margin-left: 10px;
+    }
+    .a_Twitter {
+        margin-left: 10px;
+    }
+}
