@@ -20,7 +20,7 @@ import cityMemory4 from "../../assets/imgs/citymemory4.webp";
 import airDeliveryIcon from "../../assets/imgs/AirDeliveryIcon.webp";
 
 const Home = () => {
-    const apiKey = "f1e5e935d3d39352f9cbcfcd1f46a963";
+    const apiKey = "8220daaf1cbcf21675c05bbc402fcc7d";
     const [flightId, setFlightId] = useState("");
     const [date, setDate] = useState("");
     const [flightData, setFlightData] = useState(null);
